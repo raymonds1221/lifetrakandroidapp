@@ -1,0 +1,427 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-sdk
+ADDED from AndroidManifest.xml:6:5
+MERGED from com.android.support:multidex:1.0.0:18:5
+MERGED from lifetrakandroid:actionbarsherlock:unspecified:7:5
+MERGED from lifetrakandroid:SlidingMenu:unspecified:7:5
+MERGED from lifetrakandroid:actionbarsherlock:unspecified:7:5
+MERGED from lifetrakandroid:ViewPagerIndicator:unspecified:7:5
+MERGED from lifetrakandroid:draganddroplistview:unspecified:7:5
+MERGED from lifetrakandroid:facebook:unspecified:20:5
+MERGED from lifetrakandroid:apptentive-android-sdk:unspecified:7:5
+MERGED from com.google.android.gms:play-services-fitness:7.5.0:18:5
+MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
+MERGED from com.google.android.gms:play-services-location:7.5.0:18:5
+MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
+MERGED from com.google.android.gms:play-services-maps:7.5.0:28:5
+MERGED from com.google.android.gms:play-services-base:7.5.0:18:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:8:9
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:7:9
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:11:5
+MERGED from com.google.android.gms:play-services-maps:7.5.0:22:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#android.permission.BLUETOOTH
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from AndroidManifest.xml:13:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:14:5
+	android:name
+		ADDED from AndroidManifest.xml:14:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:15:5
+MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
+	android:name
+		ADDED from AndroidManifest.xml:15:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:16:5
+MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.WRITE_CALL_LOG
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.RECEIVE_MMS
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.READ_CONTACTS
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+application
+ADDED from AndroidManifest.xml:24:5
+MERGED from lifetrakandroid:actionbarsherlock:unspecified:11:5
+MERGED from lifetrakandroid:actionbarsherlock:unspecified:11:5
+MERGED from lifetrakandroid:facebook:unspecified:22:5
+MERGED from com.google.android.gms:play-services-fitness:7.5.0:19:5
+MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
+MERGED from com.google.android.gms:play-services-location:7.5.0:19:5
+MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
+MERGED from com.google.android.gms:play-services-maps:7.5.0:29:5
+MERGED from com.google.android.gms:play-services-base:7.5.0:20:5
+	android:label
+		ADDED from AndroidManifest.xml:28:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:26:9
+	android:icon
+		ADDED from AndroidManifest.xml:27:9
+	android:theme
+		ADDED from AndroidManifest.xml:30:9
+	android:largeHeap
+		ADDED from AndroidManifest.xml:29:9
+	android:name
+		ADDED from AndroidManifest.xml:25:9
+meta-data#apptentive_api_key
+ADDED from AndroidManifest.xml:32:9
+	android:name
+		ADDED from AndroidManifest.xml:33:13
+	android:value
+		ADDED from AndroidManifest.xml:34:13
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from AndroidManifest.xml:35:9
+	android:name
+		ADDED from AndroidManifest.xml:36:13
+	android:value
+		ADDED from AndroidManifest.xml:37:13
+activity#com.salutron.lifetrakwatchapp.WelcomePageActivity
+ADDED from AndroidManifest.xml:39:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:41:13
+	android:name
+		ADDED from AndroidManifest.xml:40:13
+activity#com.salutron.lifetrakwatchapp.StartingActivity
+ADDED from AndroidManifest.xml:42:9
+	android:theme
+		ADDED from AndroidManifest.xml:44:13
+	android:name
+		ADDED from AndroidManifest.xml:43:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:45:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:46:17
+	android:name
+		ADDED from AndroidManifest.xml:46:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:47:17
+	android:name
+		ADDED from AndroidManifest.xml:47:27
+activity#com.salutron.lifetrakwatchapp.ConnectionActivity
+ADDED from AndroidManifest.xml:50:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:53:13
+	android:label
+		ADDED from AndroidManifest.xml:52:13
+	android:name
+		ADDED from AndroidManifest.xml:51:13
+activity#com.salutron.lifetrakwatchapp.UserProfileActivity
+ADDED from AndroidManifest.xml:54:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:56:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:57:13
+	android:name
+		ADDED from AndroidManifest.xml:55:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:58:13
+activity#com.salutron.lifetrakwatchapp.util.DialogActivity
+ADDED from AndroidManifest.xml:60:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:62:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:63:13
+	android:theme
+		ADDED from AndroidManifest.xml:65:13
+	android:excludeFromRecents
+		ADDED from AndroidManifest.xml:64:13
+	android:name
+		ADDED from AndroidManifest.xml:61:13
+	android:launchMode
+		ADDED from AndroidManifest.xml:66:13
+activity#com.salutron.lifetrakwatchapp.IntroductionActivity
+ADDED from AndroidManifest.xml:67:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:69:13
+	android:theme
+		ADDED from AndroidManifest.xml:70:13
+	android:name
+		ADDED from AndroidManifest.xml:68:13
+activity#com.salutron.lifetrakwatchapp.PairDeviceActivity
+ADDED from AndroidManifest.xml:71:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:73:13
+	android:name
+		ADDED from AndroidManifest.xml:72:13
+activity#com.salutron.lifetrakwatchapp.PairDeviceAutoActivity
+ADDED from AndroidManifest.xml:74:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:76:13
+	android:name
+		ADDED from AndroidManifest.xml:75:13
+activity#com.salutron.lifetrakwatchapp.MainActivity
+ADDED from AndroidManifest.xml:77:9
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:80:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:79:13
+	android:name
+		ADDED from AndroidManifest.xml:78:13
+activity#com.salutron.lifetrakwatchapp.ProfileSelectActivity
+ADDED from AndroidManifest.xml:81:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:83:13
+	android:theme
+		ADDED from AndroidManifest.xml:84:13
+	android:name
+		ADDED from AndroidManifest.xml:82:13
+activity#com.salutron.lifetrakwatchapp.ProfileSelectR450Activity
+ADDED from AndroidManifest.xml:85:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:87:13
+	android:theme
+		ADDED from AndroidManifest.xml:88:13
+	android:name
+		ADDED from AndroidManifest.xml:86:13
+activity#com.salutron.lifetrakwatchapp.ProfileSelectR420Activity
+ADDED from AndroidManifest.xml:89:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:91:13
+	android:theme
+		ADDED from AndroidManifest.xml:92:13
+	android:name
+		ADDED from AndroidManifest.xml:90:13
+activity#com.apptentive.android.sdk.ViewActivity
+ADDED from AndroidManifest.xml:93:9
+	android:theme
+		ADDED from AndroidManifest.xml:95:13
+	android:name
+		ADDED from AndroidManifest.xml:94:13
+activity#com.salutron.lifetrakwatchapp.LoginActivity
+ADDED from AndroidManifest.xml:98:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:101:13
+	android:label
+		ADDED from AndroidManifest.xml:100:13
+	android:name
+		ADDED from AndroidManifest.xml:99:13
+activity#com.salutron.lifetrakwatchapp.SignupActivity
+ADDED from AndroidManifest.xml:102:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:105:13
+	android:label
+		ADDED from AndroidManifest.xml:104:13
+	android:name
+		ADDED from AndroidManifest.xml:103:13
+activity#com.salutron.lifetrakwatchapp.ServerSyncActivity
+ADDED from AndroidManifest.xml:106:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:108:13
+	android:name
+		ADDED from AndroidManifest.xml:107:13
+activity#com.salutron.lifetrakwatchapp.ServerRestoreActivity
+ADDED from AndroidManifest.xml:109:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:111:13
+	android:name
+		ADDED from AndroidManifest.xml:110:13
+activity#com.salutron.lifetrakwatchapp.ResetPasswordActivity
+ADDED from AndroidManifest.xml:112:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:115:13
+	android:label
+		ADDED from AndroidManifest.xml:114:13
+	android:name
+		ADDED from AndroidManifest.xml:113:13
+activity#com.salutron.lifetrakwatchapp.TermsAndConditionsActivity
+ADDED from AndroidManifest.xml:116:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:118:13
+	android:name
+		ADDED from AndroidManifest.xml:117:13
+activity#com.facebook.LoginActivity
+ADDED from AndroidManifest.xml:119:9
+	android:name
+		ADDED from AndroidManifest.xml:119:19
+activity#com.salutron.lifetrakwatchapp.NotificationSettingActivity
+ADDED from AndroidManifest.xml:120:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:122:13
+	android:name
+		ADDED from AndroidManifest.xml:121:13
+activity#com.salutron.lifetrakwatchapp.PairWatchActivity
+ADDED from AndroidManifest.xml:123:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:125:13
+	android:name
+		ADDED from AndroidManifest.xml:124:13
+service#com.salutron.blesdk.SALBLEService
+ADDED from AndroidManifest.xml:127:9
+	android:name
+		ADDED from AndroidManifest.xml:127:18
+service#com.salutron.blesdk.SALBLEService43
+ADDED from AndroidManifest.xml:128:9
+	android:name
+		ADDED from AndroidManifest.xml:128:18
+service#com.salutron.blesdk.SALBLEService42_SGS4
+ADDED from AndroidManifest.xml:129:9
+	android:name
+		ADDED from AndroidManifest.xml:129:18
+service#com.salutron.blesdk.SALBLEService42_HTC
+ADDED from AndroidManifest.xml:130:9
+	android:name
+		ADDED from AndroidManifest.xml:130:18
+service#com.salutron.lifetrakwatchapp.service.GoogleFitSyncService
+ADDED from AndroidManifest.xml:131:9
+	android:exported
+		ADDED from AndroidManifest.xml:131:92
+	android:name
+		ADDED from AndroidManifest.xml:131:18
+service#com.salutron.lifetrakwatchapp.service.LogCollectorService
+ADDED from AndroidManifest.xml:132:9
+	android:name
+		ADDED from AndroidManifest.xml:132:18
+service#com.salutron.blesdk.SALNotifyService
+ADDED from AndroidManifest.xml:133:9
+	android:label
+		ADDED from AndroidManifest.xml:135:13
+	android:permission
+		ADDED from AndroidManifest.xml:136:13
+	android:name
+		ADDED from AndroidManifest.xml:134:13
+intent-filter#android.service.notification.NotificationListenerService
+ADDED from AndroidManifest.xml:137:13
+action#android.service.notification.NotificationListenerService
+ADDED from AndroidManifest.xml:138:17
+	android:name
+		ADDED from AndroidManifest.xml:138:25
+service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
+ADDED from AndroidManifest.xml:143:9
+	android:enabled
+		ADDED from AndroidManifest.xml:145:13
+	android:name
+		ADDED from AndroidManifest.xml:144:13
+receiver#com.salutron.lifetrakwatchapp.service.LogSenderReceiver
+ADDED from AndroidManifest.xml:147:9
+	android:exported
+		ADDED from AndroidManifest.xml:150:13
+	android:enabled
+		ADDED from AndroidManifest.xml:149:13
+	android:name
+		ADDED from AndroidManifest.xml:148:13
+intent-filter#com.salutron.lifetrak.sendlog
+ADDED from AndroidManifest.xml:151:13
+action#com.salutron.lifetrak.sendlog
+ADDED from AndroidManifest.xml:152:17
+	android:name
+		ADDED from AndroidManifest.xml:152:25
+receiver#com.apptentive.android.sdk.comm.NetworkStateReceiver
+ADDED from AndroidManifest.xml:155:9
+	android:name
+		ADDED from AndroidManifest.xml:155:19
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:156:13
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from AndroidManifest.xml:157:17
+	android:name
+		ADDED from AndroidManifest.xml:157:25
+receiver#com.salutron.lifetrakwatchapp.util.ConnectivityChangeReceiver
+ADDED from AndroidManifest.xml:161:9
+	android:name
+		ADDED from AndroidManifest.xml:161:19
+intent-filter#android.net.conn.CONNECTIVITY_CHANGE+android.net.wifi.WIFI_STATE_CHANGED
+ADDED from AndroidManifest.xml:162:13
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from AndroidManifest.xml:164:17
+	android:name
+		ADDED from AndroidManifest.xml:164:25
+receiver#com.salutron.lifetrakwatchapp.service.AlarmNotifReceiver
+ADDED from AndroidManifest.xml:167:9
+	android:enabled
+		ADDED from AndroidManifest.xml:167:92
+	android:name
+		ADDED from AndroidManifest.xml:167:19
+receiver#com.salutron.lifetrakwatchapp.MainActivity$BluetoothSearchReceiver
+ADDED from AndroidManifest.xml:169:9
+	android:name
+		ADDED from AndroidManifest.xml:169:19
+service#com.salutron.lifetrakwatchapp.service.AlarmService
+ADDED from AndroidManifest.xml:171:10
+	android:name
+		ADDED from AndroidManifest.xml:171:19
+uses-library#com.samsung.android.sdk.bt
+ADDED from AndroidManifest.xml:173:9
+	android:required
+		ADDED from AndroidManifest.xml:175:13
+	android:name
+		ADDED from AndroidManifest.xml:174:13
+uses-library#com.htc.android.bluetooth.le
+ADDED from AndroidManifest.xml:176:9
+	android:required
+		ADDED from AndroidManifest.xml:178:13
+	android:name
+		ADDED from AndroidManifest.xml:177:13
+meta-data#com.crashlytics.ApiKey
+ADDED from AndroidManifest.xml:183:5
+	android:name
+		ADDED from AndroidManifest.xml:183:16
+	android:value
+		ADDED from AndroidManifest.xml:183:54
+meta-data#com.google.android.gms.version
+ADDED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
+	android:name
+		ADDED from com.google.android.gms:play-services-base:7.5.0:22:13
+	android:value
+		ADDED from com.google.android.gms:play-services-base:7.5.0:23:13
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from com.google.android.gms:play-services-maps:7.5.0:23:5
+	android:name
+		ADDED from com.google.android.gms:play-services-maps:7.5.0:23:22
+uses-feature#0x00020000
+ADDED from com.google.android.gms:play-services-maps:7.5.0:24:5
+	android:required
+		ADDED from com.google.android.gms:play-services-maps:7.5.0:26:8
+	android:glEsVersion
+		ADDED from com.google.android.gms:play-services-maps:7.5.0:25:8
+android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from AndroidManifest.xml:2:1 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE

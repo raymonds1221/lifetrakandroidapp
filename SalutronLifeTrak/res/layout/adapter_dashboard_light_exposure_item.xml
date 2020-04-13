@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/selector_dasboard_item">
+    <com.salutron.lifetrakwatchapp.view.DashboardLighExposureView
+        android:id="@+id/dmvProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <LinearLayout 
+	    android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/dmvProgress"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="20dp"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:id="@+id/tvwDashboardItemTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="@string/light_exposure"
+	        android:textSize="@dimen/dashboard_item_title_textsize" />
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        <TextView 
+		        android:id="@+id/tvwDashboardItemHourValue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/dashboard_item_value_textsize" />
+	        <TextView 
+		        android:id="@+id/tvwDashboardItemHourUnit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/sleep_hour_unit"
+		        android:textSize="@dimen/dashboard_item_unit_textsize"
+		        android:textColor="@color/color_unit" />
+	        <TextView 
+		        android:id="@+id/tvwDashboardItemMinuteValue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/dashboard_item_value_textsize" />
+	        <TextView 
+		        android:id="@+id/tvwDashboardItemMinuteUnit"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:text="@string/sleep_minute_unit"
+		        android:textSize="@dimen/dashboard_item_unit_textsize"
+		        android:textColor="@color/color_unit" />
+	    </LinearLayout>
+	</LinearLayout>
+	<ImageView 
+        android:id="@id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_dragdrop"
+        android:contentDescription="@string/drag_and_drop" />
+</RelativeLayout>

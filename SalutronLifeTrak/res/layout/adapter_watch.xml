@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal">
+    <ImageView 
+        android:id="@+id/imgWatchImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/watch" />
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tvwWatchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="@dimen/watch_name_textsize"
+            android:gravity="center_horizontal" />
+        <Button 
+            android:id="@+id/btnConnectToDevice"
+            android:layout_width="150dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/connect_to_device"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_connect_button" />
+    </LinearLayout>
+</LinearLayout>

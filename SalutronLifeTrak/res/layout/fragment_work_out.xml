@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/welcome_watch_text_margin"
+        android:weightSum="2"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WORKOUT"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewWorkOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fitness_landscape_stats_margin"
+                    android:text="2 TIME"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textSize="@dimen/total_active_time_hr_min_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="min"
+                    android:textSize="@dimen/fitness_results_stat_metric_goal_value_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textSize="@dimen/total_active_time_hr_min_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="sec"
+                    android:textSize="@dimen/fitness_results_stat_metric_goal_value_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewHund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="92"
+                    android:textSize="@dimen/total_active_time_hr_min_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="hund"
+                    android:textSize="@dimen/fitness_results_stat_metric_goal_value_textsize"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".9"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="38dp"
+                    android:text="START"
+                    android:textSize="@dimen/to_date_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6:45:44 PM"
+                    android:textSize="@dimen/dashboard_item_title_textsize"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="38dp"
+                    android:text="END"
+                    android:textSize="@dimen/to_date_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7:45:41 PM"
+                    android:textSize="@dimen/dashboard_item_title_textsize"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:paddingLeft="@dimen/welcome_watch_text_margin"
+        android:paddingRight="@dimen/welcome_watch_text_margin"
+        android:paddingTop="@dimen/welcome_watch_text_margin"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/work_out_rounded_box_red"
+            android:text="HEART RATE"
+            android:textColor="#5199EB"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/work_out_rounded_box_green"
+            android:text="STEPS"
+            android:textColor="#5199EB"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/work_out_rounded_box_orange"
+            android:text="CALORIES"
+            android:textColor="#5199EB"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/work_out_rounded_box_blue"
+            android:text="DISTANCE"
+            android:textColor="#5199EB"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout2"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/welcome_watch_text_margin"
+        android:paddingLeft="@dimen/welcome_watch_text_margin"
+        android:paddingRight="@dimen/welcome_watch_text_margin"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/textViewHeartRate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewSteps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView6Calories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#363C40" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/calendar_back"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/calendar_next"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center"
+            android:textColor="#A6B9C5"
+            android:textSize="@dimen/menu_textsize"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RelativeLayout1"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <!--
+ Minute = textViewMin 
+Second = textViewSec	
+Hund = textViewHund
+StartTime = textViewStartTime
+EndTime = textViewEndTime
+HeartRate = textViewHeartRate
+Steps = textViewSteps
+Calories = textView6Calories
+Distance = textViewDistance
+WorkOut List = listViewWorkOut -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <!-- Plot Here -->
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ListView
+                android:id="@+id/listViewWorkOutGraphData2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

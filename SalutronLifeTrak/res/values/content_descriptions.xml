@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lifetrak_logo">LifeTrak Logo</string>
+    <string name="introduction_item">Welcome to LifeTrak</string>
+    <string name="watch">Watch</string>
+    <string name="pair_device_sprite">Pair Device Image</string>
+    <string name="menu_icon">Menu Item</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="connection_failed">Connection Failed!</string>
+    <string name="close">Close</string>
+    <string name="finding_device">Finding Device</string>
+    <string name="sync_status">Sync Status Image</string>
+    <!--<string name="heart_rate">Heart Rate</string>-->
+    <string name="drag_and_drop">Drag and Drop</string>
+    <string name="dashboard_icon">Dashboard Icon</string>
+    <string name="fitness_results_stat_icon">Stats Icon</string>
+    <string name="fitness_results_stat_goal">Goal Icon</string>
+    <string name="playhead">Playhead</string>
+    <string name="avg_bpm">Average BPM</string>
+    <string name="bpm_intensity_bar">BPM Intensity Bar</string>
+    <string name="sleep_icon_bed">Sleep Icon Bed</string>
+    <!--<string name="signup">Signup</string>-->
+    <!--<string name="login">Log in</string>-->
+    <string name="signin_fb">Sign In via Facebook</string>
+    <string name="profile_pic">Profile Picture</string>
+    <string name="remind_me_later">Remind me later</string>
+</resources>

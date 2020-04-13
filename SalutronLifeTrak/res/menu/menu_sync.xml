@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/button_sync"
+        android:showAsAction="always"
+        android:icon="@drawable/lt_assets_menu_sync"
+        android:title="@string/sync" />
+</menu>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical" >
+    <RadioGroup 
+        android:id="@+id/rdgToDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/color_green_tint"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/radDay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_left" />
+        <RadioButton 
+            android:id="@+id/radWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_mid" />
+        <RadioButton 
+            android:id="@+id/radMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_mid" />
+        <RadioButton 
+            android:id="@+id/radYear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_right" />
+    </RadioGroup>
+    <RelativeLayout 
+        android:id="@+id/tvwAvgBpmLayout"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:layout_marginLeft="@dimen/fitness_resuls_stats_margin_vertical"
+		android:layout_marginTop="@dimen/fitness_resuls_stats_margin_horizontal"
+		android:layout_marginRight="@dimen/fitness_resuls_stats_margin_vertical"
+		android:layout_marginBottom="@dimen/fitness_resuls_stats_margin_horizontal">
+       	<TextView 
+       	    android:id="@+id/tvwAvgBpmLabel"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:text="@string/avg_bpm2"
+       	    android:textSize="@dimen/avg_bpm_textsize" />
+       	<TextView 
+       	    android:id="@+id/tvwAvgBpmValue"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_below="@id/tvwAvgBpmLabel"
+       	    android:layout_marginRight="10dp"
+       	    android:textSize="@dimen/avg_bpm_value_textsize" />
+       	<ImageView 
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_below="@id/tvwAvgBpmLabel"
+       	    android:layout_toRightOf="@id/tvwAvgBpmValue"
+       	    android:layout_alignParentBottom="true"
+       	    android:src="@drawable/dash_1_bpmicon"
+       	    android:contentDescription="@string/avg_bpm" />
+       	<LinearLayout 
+       	    android:layout_width="150dp"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignParentRight="true"
+       	    android:orientation="vertical">
+       	    <FrameLayout 
+       	        android:id="@+id/frmIntensityContainer"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="45dp">
+       	        <TextView 
+       	            android:id="@+id/tvwIntentsityTag"
+       	            android:layout_width="40dp"
+       	            android:layout_height="wrap_content"
+       	            android:gravity="center_horizontal"
+       	            android:background="@drawable/dash_2_1tagvl"
+       	            android:textColor="@android:color/white" />
+       	        <ImageView 
+       	            android:layout_width="match_parent"
+       	            android:layout_height="wrap_content"
+       	            android:layout_gravity="bottom"
+       	            android:layout_marginLeft="18dp"
+       	            android:layout_marginRight="18dp"
+       	            android:src="@drawable/dash_2_0intensitybar"
+       	            android:contentDescription="@string/bpm_intensity_bar" />
+       	    </FrameLayout>
+       	    <RelativeLayout 
+       	        android:layout_width="match_parent"
+       	        android:layout_height="wrap_content">
+       	        <TextView 
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+	       	        android:text="@string/light" />
+	       	    <TextView 
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+	       	        android:layout_alignParentRight="true"
+	       	        android:text="@string/max" />
+       	    </RelativeLayout>
+       	</LinearLayout>
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:id="@+id/frmHeartRatePlotContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" 
+        android:background="@drawable/ll_fitnessres_bg_graph" >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <FrameLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/color_xaxis_bar"
+		android:visibility="gone">
+	      <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="@string/am"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	      <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="right"
+	          android:text="@string/pm"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	</FrameLayout>
+    
+	<FrameLayout 
+	    android:id="@+id/frmHeartRateLoadingText"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone" >
+	    
+	    <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="center"
+	          android:text="@string/loading_text"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	    
+	</FrameLayout>   
+    
+</LinearLayout>

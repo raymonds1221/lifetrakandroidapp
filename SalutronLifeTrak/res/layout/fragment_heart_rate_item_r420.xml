@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical" >
+    <RadioGroup
+		android:visibility="gone"
+        android:id="@+id/rdgToDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/color_green_tint"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/radDay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_left" />
+        <RadioButton 
+            android:id="@+id/radWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_mid" />
+        <RadioButton 
+            android:id="@+id/radMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_mid" />
+        <RadioButton 
+            android:id="@+id/radYear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_right" />
+    </RadioGroup>
+    <RelativeLayout 
+        android:id="@+id/tvwAvgBpmLayout"
+		android:layout_width="match_parent"
+		android:layout_height="70dp"
+		android:layout_marginLeft="@dimen/fitness_resuls_stats_margin_vertical"
+		android:layout_marginTop="@dimen/fitness_resuls_stats_margin_horizontal"
+		android:layout_marginRight="@dimen/fitness_resuls_stats_margin_vertical"
+		android:layout_marginBottom="@dimen/fitness_resuls_stats_margin_horizontal">
+       	<TextView 
+       	    android:id="@+id/tvwAvgBpmLabel"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:text="@string/heart_rate"
+			android:textStyle="bold"
+       	    android:textSize="@dimen/avg_bpm_textsize" />
+       <LinearLayout
+		   android:layout_below="@+id/tvwAvgBpmLabel"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:gravity="center"
+		   android:orientation="horizontal">
+		   <TextView
+			   android:id="@+id/tvwAvgBpmValue"
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+
+			   android:layout_marginRight="10dp"
+			   android:text="0"
+			   android:textSize="@dimen/avg_bpm_value_textsize" />
+
+		   <TextView
+			   android:layout_width="wrap_content"
+			   android:layout_height="wrap_content"
+			   android:layout_below="@id/tvwAvgBpmLabel"
+			   android:layout_marginRight="10dp"
+			   android:layout_marginLeft="10dp"
+			   android:text="bpm"
+			   android:textSize="16sp" />
+	   </LinearLayout>
+       	<ImageView
+			android:visibility="gone"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_below="@id/tvwAvgBpmLabel"
+
+       	    android:layout_alignParentBottom="true"
+       	    android:src="@drawable/dash_1_bpmicon"
+       	    android:contentDescription="@string/avg_bpm" />
+       	<LinearLayout 
+       	    android:layout_width="200dp"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignParentRight="true"
+       	    android:orientation="vertical"
+			>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:minHeight="22dp"
+				android:gravity="center"
+				android:weightSum="1">
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="@string/min_bpm_label"
+					android:layout_weight=".8"
+					android:textSize="@dimen/to_date_textsize" />
+				<TextView
+					android:id="@+id/tvMinRateValue"
+					android:layout_weight=".2"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:text="0"
+					android:textSize="@dimen/to_date_textsize"  />
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:minHeight="22dp"
+					android:gravity="center"
+					android:weightSum="1">
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="@string/max_bpm_label"
+						android:layout_weight=".8"
+						android:textSize="@dimen/to_date_textsize" />
+					<TextView
+						android:id="@+id/tvMaxRateValue"
+						android:layout_weight=".2"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:textStyle="bold"
+						android:text="0"
+						android:textSize="@dimen/to_date_textsize"  />
+				</LinearLayout>
+
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:minHeight="22dp"
+				android:visibility="invisible"
+				android:gravity="center"
+				android:weightSum="1">
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="@string/intense_label"
+					android:layout_weight=".8"
+					android:textSize="@dimen/to_date_textsize" />
+				<TextView
+					android:id="@+id/tvIntenseHRDuration"
+					android:layout_weight=".2"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:text="00.00"
+					android:textSize="@dimen/to_date_textsize"  />
+			</LinearLayout>
+
+       	    <RelativeLayout 
+       	        android:layout_width="match_parent"
+       	        android:layout_height="wrap_content">
+				<FrameLayout
+					android:id="@+id/frmIntensityContainer"
+					android:layout_width="wrap_content"
+					android:layout_height="45dp"
+					android:visibility="gone">
+					<TextView
+						android:id="@+id/tvwIntentsityTag"
+						android:layout_width="40dp"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal"
+						android:background="@drawable/dash_2_1tagvl"
+						android:textColor="@android:color/white" />
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom"
+						android:layout_marginLeft="18dp"
+						android:layout_marginRight="18dp"
+						android:src="@drawable/dash_2_0intensitybar"
+						android:contentDescription="@string/bpm_intensity_bar" />
+				</FrameLayout>
+       	        <TextView 
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+					android:visibility="gone"
+	       	        android:text="@string/light" />
+	       	    <TextView 
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+					android:visibility="gone"
+	       	        android:layout_alignParentRight="true"
+	       	        android:text="@string/max" />
+       	    </RelativeLayout>
+       	</LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<FrameLayout
+			android:id="@+id/frmHeartRatePlotContainer"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:layout_height="300dp"
+			>
+
+			<ProgressBar
+				android:id="@+id/progressBar"
+				style="?android:attr/progressBarStyleLarge"
+				android:layout_width="match_parent"
+				android:visibility="gone"
+				android:layout_height="wrap_content" />
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:id="@+id/linear_x_values"
+			android:layout_width="wrap_content"
+			android:layout_height="300dp"
+			android:orientation="vertical"
+			android:paddingBottom="12sp"
+			android:layout_marginRight="12dp"
+			android:weightSum="24">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="240"
+				android:gravity="top|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="4.5"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="200"
+				android:gravity="top|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="4.2"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:gravity="top|center"
+				android:text="150"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="2.8"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="120"
+				android:gravity="top|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="2"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="100"
+				android:gravity="top|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="3"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="50"
+				android:gravity="top|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="3"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="30"
+				android:gravity="top|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="2"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="0"
+				android:gravity="bottom|center"
+				android:textSize="@dimen/activity_vertical_margin"
+				android:layout_weight="2.3"/>
+
+		</LinearLayout>
+
+
+
+		<LinearLayout
+			android:id="@+id/linear_color"
+			android:layout_width="match_parent"
+			android:layout_height="300dp"
+			android:orientation="vertical"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:weightSum="20">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:background="#70c6abab"
+				android:layout_weight="4.5"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:background="#60f4e2b3"
+				android:layout_weight="2.5"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:background="#6090ae9f"
+				android:layout_weight="2.8"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:background="#60898989"
+				android:layout_weight="2"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:background="#90DBDBDB"
+				android:layout_weight="8.2"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="300dp"
+			android:orientation="vertical"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:id="@+id/linear_hover"
+			android:visibility="gone"
+			android:layout_marginLeft="12dp"
+			android:layout_marginRight="12dp"
+			android:background="#60000000"
+			android:weightSum="20">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="Above Max"
+				android:textColor="#FFFFFF"
+				android:gravity="center"
+				android:textSize="8sp"
+				android:layout_weight="4.4"/>
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight=".1"
+				android:background="#FFFFFF"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="Intense"
+				android:textColor="#FFFFFF"
+				android:gravity="center"
+				android:textSize="8sp"
+				android:layout_weight="2.4"/>
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight=".1"
+				android:background="#FFFFFF"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="Moderate"
+				android:textColor="#FFFFFF"
+				android:gravity="center"
+				android:textSize="8sp"
+				android:layout_weight="2.7"/>
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight=".1"
+				android:background="#FFFFFF"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="Light"
+				android:textColor="#FFFFFF"
+				android:gravity="center"
+				android:textSize="8sp"
+				android:layout_weight="2"/>
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight=".1"
+				android:background="#FFFFFF"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="Resting"
+				android:textColor="#FFFFFF"
+				android:gravity="center"
+				android:textSize="8sp"
+				android:layout_weight="8.1"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+    <FrameLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/color_xaxis_bar"
+		android:visibility="gone">
+	      <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:text="@string/am"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	      <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="right"
+	          android:text="@string/pm"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	</FrameLayout>
+    
+	<FrameLayout 
+	    android:id="@+id/frmHeartRateLoadingText"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone" >
+	    
+	    <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="center"
+	          android:text="@string/loading_text"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	    
+	</FrameLayout>   
+    
+</LinearLayout>

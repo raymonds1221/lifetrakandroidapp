@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LifeTrak</string>
+    <string name="flurry_api_key">44V5DG4SWVKJ99WGRJC5</string>
+    <string name="client_id">WzXdfbBrMtC10MAVouC3rqy8cA0NNPSycAvpBElF</string>
+    <string name="client_secret">PRqOLPMb60MCxLeRuJRlROpwKGGdYQGoKzNWUIsD</string>
+    <string name="fb_app_id">275031536009220</string>
+</resources>

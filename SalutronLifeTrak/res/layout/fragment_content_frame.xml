@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+         <Button 
+        android:id="@+id/btnSyncAlert"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Sync Alert"/>
+
+    -->
+
+    <FrameLayout
+        android:id="@+id/frmContentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical" />
+
+    <FrameLayout
+        android:id="@+id/frmModalView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:visibility="gone" />
+
+    <com.salutron.lifetrakwatchapp.view.LifeTrakSlidingDrawer
+        android:id="@+id/sldCalendarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_height"
+        android:layout_gravity="bottom"
+        android:allowSingleTap="false"
+        android:content="@+id/cdrContent"
+        android:handle="@+id/tvwHandle" >
+
+        <RelativeLayout
+            android:id="@id/tvwHandle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color_calendar_handle_background" >
+
+            <ImageButton
+                android:id="@+id/btnCalendarBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/back"
+                android:onClick="onCalendarNavClick"
+                android:src="@drawable/calendar_back"
+                android:tag="child_tag" />
+
+            <TextView
+                android:id="@+id/tvwCalendarDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/calendar_day_textsize" />
+
+            <ImageButton
+                android:id="@+id/btnCalendarNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/next"
+                android:onClick="onCalendarNavClick"
+                android:src="@drawable/calendar_next"
+                android:tag="child_tag" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@id/cdrContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.salutron.lifetrakwatchapp.view.CalendarControlView
+                android:id="@+id/viewCalendarControl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--
+                 <com.salutron.lifetrakwatchapp.view.CalendarPicker
+		        android:id="@+id/cdrCalendarMain"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:showWeekNumber="false"
+		        android:background="@android:color/white" />
+            -->
+
+            <ListView
+                android:id="@+id/lstYear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <NumberPicker
+                android:id="@+id/numYear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+        </ViewFlipper>
+    </com.salutron.lifetrakwatchapp.view.LifeTrakSlidingDrawer>
+    <com.salutron.lifetrakwatchapp.view.ConnectionFailedView
+        android:id="@+id/cfvConnectionFailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</FrameLayout>

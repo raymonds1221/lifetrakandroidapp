@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+	<Button
+        android:id="@+id/wake_up_alert"
+        style="@style/Button.rightarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_alert_wake_up_text" />
+	
+	<View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:background="@android:color/darker_gray" />
+	
+	<Button
+        android:id="@+id/day_light_alert"
+        style="@style/Button.rightarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_alert_day_light_text" />
+	
+	<View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:background="@android:color/darker_gray" />
+	
+	<Button
+        android:id="@+id/night_light_alert"
+        style="@style/Button.rightarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_alert_night_light_text" />
+	
+	<View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:background="@android:color/darker_gray" />
+	
+	<Button
+        android:id="@+id/inactive_alert"
+        style="@style/Button.rightarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_alert_inactive_text" />
+	
+	<View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:background="@android:color/darker_gray" />
+
+</LinearLayout>

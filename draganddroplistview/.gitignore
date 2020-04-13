@@ -1,0 +1,17 @@
+*.class
+.DS_Store
+# ignore all bin directories
+# matches "bin" in any subfolder
+bin/
+draganddroplistview/bin
+
+# ignore all gen directories
+# matches "gen" in any subfolder
+gen/
+draganddroplistview/gen
+
+# ignore all target directories
+target/
+
+# ignore all files ending with ~
+*~ 

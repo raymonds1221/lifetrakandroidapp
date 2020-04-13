@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="lifetrak_title">LifeTrak</string>
+    <string name="connot_find_device">Votre appareil LifeTrak est introuvable."</string>
+    <string name="connot_find_description">1. Assurez-vous que Bluetooth est activé sur votre smartphone ou tablette.\n\n2. Assurez-vous que votre appareil est à proximité.\n\n3. Maintenez le bouton en bas à droite vers le bas pour activer le Bluetooth (R450) ou de commencer la synchronisation (C300, C320, C410, C410w, R420).</string>
+    <string name="searching_device">La búsqueda de su <xliff:g name="device">%s</xliff:g></string>
+    <string name="searching_reminder">Appuyez et maintenez enfoncé le bouton inférieur droit pour commencer.</string>
+    <string name="syncing_data">Synchronisation des données avec votre montre LifeTrak.\nStatus: <xliff:g name="status">%s</xliff:g></string>
+    <string name="syncing_goal">Synchronisation des objectifs avec votre montre LifeTrak.</string>
+    <string name="sync_success">Synchronisation réussie!</string>
+
+    <string name="sync_failed">La synchronisation a échoué.</string>
+    <string name="choose_watch">Choisissez la montre que vous voulez connecter.</string>
+    <string name="metric_reminder">N\'oubliez pas de suivre votre <xliff:g name="metric">%s</xliff:g>!</string>
+    <string name="metric_none">Aucune <xliff:g name="metric">%s</xliff:g> enregistrée ce jour.</string>
+
+    <string name="verify_profile_pic">Changement de profil exige Internet . Voulez-vous continuer?</string>
+    <string name="verify_personal_details">Vérifiez vos données personnelles ci-dessous.</string>
+    <string name="personal_details_desc">Les détails de votre profil seront utilisés pour calculer les résultats de votre conditionnement.</string>
+    <string name="syncing_data_2">Synchronisation des données avec votre montre LifeTrak.</string>
+    <string name="cannot_find_lifetrak_watch">Nous ne pouvons trouver aucune montre LifeTrak</string>
+    <string name="ble_not_supported">Votre appareil ne prend pas en charge Smart Bluetooth. L\'application va maintenant se fermer !</string>
+    <string name="device_disconnected">Appareil déconnecté.</string>
+    <string name="bluetooth_required_on">Pour utiliser LifeTrak, votre BlueTooth doit être activé. Souhaitez-vous l\'activer maintenant ?</string>
+    <string name="last_sync_date">Dernière Sync: <xliff:g name="date">%s</xliff:g></string>
+    
+    <string name="app_version">Version de l\'appli: <xliff:g name="app_version">%s</xliff:g> | SDK Version: <xliff:g name="sdk_version">%s</xliff:g></string>
+    <string name="delete_watch_title">Supprimer Montre</string>
+    <string name="delete_watch_message">Vous êtes sûr que vous voulez supprimer <xliff:g name="watch">%s</xliff:g> watch?</string>
+    <string name="delete_sleep_log">Voulez-vous vraiment supprimer cet enregistrement?</string>
+    <string name="end_time_invalid">L\'heure de fin n\'est pas valide.</string>
+    <string name="sleep_time_invalid">Le temps de veille n\'est pas valide.</string>
+    <string name="already_connected">Cette montre est déjà connectée à cette application.</string>
+    <string name="sleep_time_exceed">Le sommeil ne doit pas dépasser 14h50min.</string>
+    <string name="no_workout_record">Aucun exercice enregistré ce jour.</string>
+    <string name="sleep_database_exists">Un journal de sommeil existe entre l\'heure de début et l\'heure de fin.</string>
+    <string name="choose_user_profile">Nous avons détecté que les paramètres de votre montre avaient changé. Choisissez quels paramètres enregistrer.</string>
+    <string name="disconnect_watch">Vous êtes sûr que vous voulez déconnecter l\'application de votre LifeTrak</string>
+    <string name="disconnect_caption">Déconnecter</string>
+    <string name="disconnection_message">Etes-vous sûr que vous voulez passer à une nouvelle montre?</string>
+    <string name="check_network_connection">La connexion Internet semble déconnectée.</string>
+    <string name="enter_input">Veuillez entrer <xliff:g name="input">%s</xliff:g></string>
+    <string name="invalid_email">Veuillez entrer une adresse de courriel valide.</string>
+    <string name="invalid_first_name">Veuillez saisir un prénom valide.</string>
+    <string name="invalid_last_name">Veuillez saisir un nom valide.</string>
+    <string name="password_not_matched">Les mots de passe ne correspondent pas.</string>
+    <string name="now_syncing">Synchronisation en cours &#8230;</string>
+    <string name="syncing_to_server">Synchronisation vers le cloud</string>
+    <string name="restoring_from_server">Restauration à partir du serveur</string>
+    <string name="my_account_info">Donnez des informations précises pour que nous puissions\nmieux VOUS aider.</string>
+    <string name="syncing_failed">Données non synchronisées. Vérifiez que votre connexion est stable.</string>
+    <string name="password_sent">Un message contenant les instructions permettant de réinitialiser votre mot de passe a été envoyé à votre adresse de courriel.</string>
+    <string name="remember_me">Me mémoriser?</string>
+    <string name="verify_account">N\'oubliez pas de valider votre adresse de courriel!</string>
+    <string name="verify_signout">Voulez-vous vraiment fermer la session?</string>
+    <string name="firstname_minimum_chars">Le prénom doit comporter au moins deux caractères.</string>
+    <string name="lastname_minimum_chars">Le nom doit comporter au moins deux caractères.</string>
+    <string name="password_min_max_chars">Le mot de passe doit comporter entre 6 et 30 caractères.</string>
+    <string name="server_error_unknown">Problème est survenu lors de la communication avec le serveur. Se il vous plaît essayer à nouveau.</string>
+    <string name="invalid_facebook_account">Compte Facebook non valide.</string>
+    <string name="synced_at">Synchronisé au %s</string>
+    <string name="synced_today">Synchronisée aujourd\'hui à %s</string>
+    <string name="terms_and_conditions">J\'accepte les Conditions d\'utilisation de LifeTrak</string>
+    <string name="accept_terms_and_conditions">Vous devez accepter les Termes et Conditions de LifeTrak.</string>
+    <string name="error_sd_card_not_mounted">Mémoire externe requise. Il semble que votre carte SD ne soit pas installée.</string>
+    <string name="error_could_not_take_photo">Votre caméra présente un problème. Nous sommes désolés du contretemps !</string>
+    <string name="r450_not_supported">Brite R450 n\'est pas encore prise en charge.</string>
+    <string name="max_date">Vous ne pouvez pas indiquer une date future comme votre date de naissance.</string>
+    <string name="invalid_weight">Poids invalide</string>
+    <string name="invalid_duration_time">La durée doit être comprise entre 10 minutes et 2 heures.</string>
+    <string name="allow_notification">Pour activer certaines fonctions de notification sur votre montre R450, vous devez paramétrer l\'accès à l\'application LifeTrak.</string>
+    <string name="daylight_exposure_error1">L\'heure de fin doit être postérieure à l\'heure de début.</string>
+	<string name="daylight_exposure_error2">L\'heure de début et l\'heure de fin ne doivent pas être identiques.</string>
+	<string name="daylight_exposure_error3">Les heures de début et de fin doivent être séparées de 30 minutes.</string>
+	<string name="daylight_exposure_error4">La durée d\'exposition ne doit pas être supérieure à l\'heure sur l\'heure de début et de fin.</string>
+	<string name="daylight_exposure_error5">La fréquence d\'alerte ne doit pas être supérieure à la durée entre l\'heure de début et l\'heure de fin.</string>
+    <string name="daylight_exposure_error6">La durée ne doit pas être supérieure à la durée entre l\'heure de début et l\'heure de fin.</string>
+    <string name="daylight_exposure_error7">Démarre jour et de nuit la lumière et de fin ne doit pas se chevaucher</string>
+
+    <string name="daylight_exposure_select">Indiquez votre sélection</string>
+    <string name="minute">minutes</string>
+    
+    <string name="brightlight_exposure">EXPOSITION À LA LUMIÈRE VIVE</string>
+	<string name="brightlight_exposure_all_light">LUMIÈRE TOTALE</string>
+	<string name="brightlight_exposure_blue_rich_Light">LUMIÈRE BLEUE</string>
+	<string name="brightlight_exposure_wrist_off">BRACELET ARRÊTÉ</string>
+	
+	<string name="string_goal">BUT</string>
+	
+	<string name="string_heart_rate">FRÉQ CARD</string>
+	<string name="string_steps">PAS</string>
+	
+	<string name="string_workout">DURÉE</string>
+	<string name="string_time">EXERCICE</string>
+    <string name="string_max_hr">MAX. HR</string>
+    <string name="string_min_hr">MIN. HR</string>
+
+    <string name="string_intense_duration">INTENSE HR DURÉE</string>
+
+
+    <string name="string_start">DÉBUT</string>
+	<string name="string_end">FIN</string>
+	
+	<string name="string_steps_inactive"> pas</string>
+	<string name="please_fill">Se il vous plaît remplir tous les champs.</string>
+	<string name="string_steps_network_error">Erreur réseau</string>
+	<string name="string_steps_email_invalid">L\' e-mail sélectionné est invalide ou ne existe pas.</string>
+	<string name="string_steps_password_invalid">Le mot de passe doit être comprise entre 6 et 30 caractères.</string>
+	<string name="string_steps_user_credential">Les informations d\'identification utilisateur étaient incorrects.</string>
+	
+	<string name="device_not_supported">Le dispositif ne est pas supporté</string>
+	
+	<string name="string_we_cant_find">Nous ne pouvons pas trouver un utilisateur avec cette adresse e-mail.</string>
+	<string name="total_workout">DURÉE EXERCICE</string>
+	<string name="total_time">TOTALE</string>
+
+    <string name="pairing_sync">SYNCHRONISER</string>
+</resources>

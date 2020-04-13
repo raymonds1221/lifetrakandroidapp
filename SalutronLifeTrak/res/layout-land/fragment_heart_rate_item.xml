@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <Spinner 
+	        android:id="@+id/spnCalendarMode"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/lnrBpmMinMaxContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/spnCalendarMode"
+            android:orientation="vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avg_bpm2"
+                android:textSize="@dimen/avg_bpm_textsize" />
+            <TextView 
+	       	    android:id="@+id/tvwAvgBpmValue"
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="wrap_content"
+	       	    android:textSize="@dimen/avg_bpm_value_textsize" />
+        </LinearLayout>
+        <TableLayout 
+            android:id="@+id/tableBpmMinMaxContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/lnrBpmMinMaxContainer">
+            <TableRow>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/max_bpm"
+                    android:textSize="@dimen/avg_bpm_textsize"/>
+                <TextView 
+                    android:id="@+id/tvwMaxBPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/avg_bpm_textsize"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/min_bpm"
+                    android:textSize="@dimen/avg_bpm_textsize"/>
+                <TextView 
+                    android:id="@+id/tvwMinBPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/avg_bpm_textsize"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout 
+       	    android:layout_width="150dp"
+       	    android:layout_height="wrap_content"
+       	    android:layout_alignParentRight="true"
+       	    android:layout_marginTop="10dp"
+       	    android:layout_marginRight="10dp"
+       	    android:orientation="vertical">
+       	    <FrameLayout 
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="45dp">
+       	        <TextView 
+       	            android:id="@+id/tvwIntentsityTag"
+       	            android:layout_width="wrap_content"
+       	            android:layout_height="wrap_content"
+       	            android:gravity="center_horizontal"
+       	            android:background="@drawable/dash_2_1tagvl"
+       	            android:textColor="@android:color/white" />
+       	        <ImageView 
+       	            android:layout_width="match_parent"
+       	            android:layout_height="wrap_content"
+       	            android:layout_gravity="bottom"
+       	            android:layout_marginLeft="18dp"
+       	            android:layout_marginRight="18dp"
+       	            android:src="@drawable/dash_2_0intensitybar"
+       	            android:contentDescription="@string/bpm_intensity_bar" />
+       	    </FrameLayout>
+       	    <RelativeLayout 
+       	        android:layout_width="match_parent"
+       	        android:layout_height="wrap_content">
+       	        <TextView 
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+	       	        android:text="@string/light" />
+	       	    <TextView 
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+	       	        android:layout_alignParentRight="true"
+	       	        android:text="@string/max" />
+       	    </RelativeLayout>
+       	</LinearLayout>
+    </RelativeLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ll_fitnessres_landscape_bg_main" >
+        <com.salutron.lifetrakwatchapp.view.GraphScrollView
+            android:id="@+id/gsvGraphScroll"
+	        android:layout_width="match_parent"
+	        android:layout_height="220dp"
+	        android:scrollbars="none">
+       	    <RelativeLayout
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content">
+	       	    <View 
+                    android:id="@+id/viewGraphLeftPadding"
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_xaxis_bar" />
+       	        <FrameLayout 
+				    android:id="@+id/frmHeartRatePlotContainer"
+				    android:layout_width="3000dp"
+				    android:layout_height="match_parent"
+				    android:layout_toRightOf="@id/viewGraphLeftPadding"
+				    android:layout_marginTop="10dp" />
+       	        <View 
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/frmHeartRatePlotContainer"
+                    android:background="@color/color_xaxis_bar" />
+       	    </RelativeLayout>
+        </com.salutron.lifetrakwatchapp.view.GraphScrollView>
+        <ImageView 
+            android:id="@+id/imgPlayhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ll_fitnessresults_img_playhead"
+            android:contentDescription="@string/playhead" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/selector_dasboard_item">
+    <ImageView 
+        android:id="@+id/imgWorkout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dash_3_workouticon"
+        android:contentDescription="@string/heart_rate" />
+    <LinearLayout 
+	    android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/imgWorkout"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginTop="20dp"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:id="@+id/tvwDashboardItemTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:text="@string/workout"
+	        android:textSize="@dimen/dashboard_item_title_textsize" />
+	    <TextView 
+	        android:id="@+id/tvwDashboardItemValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/dashboard_item_value_textsize" />
+	</LinearLayout>
+	<ImageView 
+        android:id="@id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_dragdrop"
+        android:contentDescription="@string/drag_and_drop" />
+</RelativeLayout>

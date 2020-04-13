@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/color_dialog_background">
+    <LinearLayout
+        android:id="@+id/lnrModalContainer"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dialog_padding"
+        android:background="@drawable/shape_dialog_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lollipop_issue"
+            android:padding="@dimen/abs__action_bar_icon_vertical_padding"
+            android:gravity="center"
+            android:minHeight="165dp"
+            android:id="@+id/textView"
+
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/abs__action_bar_icon_vertical_padding"
+            android:layout_marginTop="@dimen/abs__action_bar_icon_vertical_padding"
+            android:paddingBottom="@dimen/abs__action_bar_icon_vertical_padding"
+            android:paddingTop="@dimen/abs__action_bar_icon_vertical_padding"/>
+
+        <CheckBox
+            android:layout_marginLeft="@dimen/abs__action_bar_icon_vertical_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/prompt_do_not_show_again"
+            android:id="@+id/issue_checkbox_remember_choice"
+            android:checked="false" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:weightSum="1">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/prompt_yes_i_am"
+                android:id="@+id/issue_dialog_yes"
+                android:textColor="@color/color_dialog_button_textcolor"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:layout_weight=".5"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="@string/prompt_no"
+                android:textAllCaps="true"
+                android:textColor="@color/color_dialog_button_textcolor"
+
+                android:layout_weight=".5"
+                android:id="@+id/issue_dialog_no" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

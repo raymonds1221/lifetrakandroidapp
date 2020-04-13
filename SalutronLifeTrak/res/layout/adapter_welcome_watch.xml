@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageButton 
+        android:id="@+id/imgWatchImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/watch_c300_green"
+        android:scaleType="fitStart"
+        android:contentDescription="@string/watch" />
+    <LinearLayout 
+        android:id="@+id/lnrWatchInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imgWatchImage"
+        android:layout_marginLeft="@dimen/welcome_watch_text_margin"
+        android:orientation="horizontal">
+        <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:orientation="vertical">
+
+	        <TextView
+	            android:id="@+id/tvwWatchName"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:maxLines="1"
+	            android:ellipsize="end"
+	            android:maxLength="20"
+	            android:textSize="@dimen/watch_name_textsize" />
+
+	        <TextView
+	            android:id="@+id/tvwLastSyncDate"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+	    <ImageButton 
+	        android:id="@+id/btnDelete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/lt_assets_icon_delete"
+	        android:background="@android:color/transparent"
+	        android:layout_margin="10dp"
+	        android:contentDescription="@string/delete" />
+    </LinearLayout>
+</RelativeLayout>

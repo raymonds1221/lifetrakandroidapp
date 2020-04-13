@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_sync_settings"
+        android:title="@string/action_sync_goal"
+        android:icon="@drawable/lt_assets_menu_sync"
+        android:showAsAction="always"/>
+
+</menu>

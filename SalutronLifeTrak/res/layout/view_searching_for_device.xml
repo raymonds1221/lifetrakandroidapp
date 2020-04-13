@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dialog_background">
+    <LinearLayout 
+        android:id="@+id/lnrModalContainer"
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_dialog_background"
+        android:orientation="vertical">
+        <ImageButton 
+            android:id="@+id/imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/asset_0_xcancel"
+            android:contentDescription="@string/close"
+            android:background="@android:color/transparent" />
+        <TextView 
+            android:id="@+id/tvwSearchingDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/searching_device"
+            android:textSize="@dimen/searching_device_textsize" />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/asset_connect_1finding"
+            android:contentDescription="@string/finding_device" />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/searching_reminder"
+            android:visibility="gone" />
+    </LinearLayout>
+</FrameLayout>

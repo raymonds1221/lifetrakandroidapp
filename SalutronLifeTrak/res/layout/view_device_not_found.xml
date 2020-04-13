@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/color_dialog_background">
+    <LinearLayout 
+        android:id="@+id/lnrModalContainer"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/dialog_padding"
+        android:background="@drawable/shape_dialog_background"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center_horizontal"
+            android:text="@string/connot_find_device"
+            android:textSize="@dimen/cannot_connect_textsize"
+            android:padding="10dp" />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/asset_connect_4failed"
+            android:contentDescription="@string/connection_failed" />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/dialog_padding"
+            android:paddingRight="@dimen/dialog_padding"
+            android:paddingTop="@dimen/welcome_watch_text_margin"
+            android:paddingBottom="@dimen/welcome_watch_text_margin"
+            android:text="@string/connot_find_description"
+            android:textSize="@dimen/cannot_connect_description_textsize"
+            />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <Button 
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="@string/cancel_button_text"
+                android:textColor="@color/color_dialog_button_textcolor"
+                android:background="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle" />
+            <View 
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnTryAgain"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:text="@string/try_again_buton_text"
+                android:textColor="@color/color_dialog_button_textcolor"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

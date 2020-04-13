@@ -1,0 +1,5 @@
+.DS_Store
+.project
+.classpat
+bin/*h
+*.class

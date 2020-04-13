@@ -1,0 +1,7 @@
+include ':SlidingMenu'
+include ':facebook'
+include ':apptentive-android-sdk'
+include ':actionbarsherlock'
+include ':SalutronLifeTrak'
+include ':ViewPagerIndicator'
+include ':draganddroplistview'

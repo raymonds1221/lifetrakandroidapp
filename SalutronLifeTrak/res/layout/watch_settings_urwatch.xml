@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/urwatch_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/urwatch_caption"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/urwatch_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/urwatch_caption"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/noimage" />
+
+    <TextView
+        android:id="@+id/urwatch_lastsync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/urwatch_pic"
+        android:layout_marginBottom="68dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/urwatch_pic"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/urwatch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/urwatch_pic"
+        android:text="@string/urwatch_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/urwatch_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/urwatch_pic"
+        android:hint="@string/urwatch_name"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone" />
+
+    <Button
+        android:id="@+id/urwatch_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/urwatch_name"
+        android:text="@string/urwatch_disconnect"
+        android:visibility="gone" />
+
+</RelativeLayout>

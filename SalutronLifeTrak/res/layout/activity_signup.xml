@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_user_profile_bg"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btnSignupFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/signin_fb"
+            android:onClick="onSignupFacebookClick"
+            android:src="@drawable/lt_assets_signup_fb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/signup_via_email"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgProfilePic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:contentDescription="@string/profile_pic"
+                    android:onClick="onProfilePictureClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/lt_assets_signup_profilepic" />
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1" >
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:labelFor="@id/edtFirstname"
+                            android:text="@string/firstname"
+                            android:textSize="18sp"
+                            android:inputType="textPersonName"/>
+
+                        <EditText
+                            android:id="@id/edtFirstname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:inputType="textPersonName"
+                            android:maxLength="20" >
+                            <requestFocus />
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:labelFor="@id/edtLastname"
+                            android:text="@string/lastname"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@id/edtLastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:inputType="textPersonName"
+                            android:maxLength="20" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/edtEmail"
+                        android:text="@string/email"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:inputType="textEmailAddress" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/edtPassword"
+                        android:text="@string/password"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@id/edtPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:inputType="textPassword" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:labelFor="@id/edtConfirmPassword"
+                        android:text="@string/confirm_password"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@id/edtConfirmPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:inputType="textPassword" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:background="@android:color/white">
+            <CheckBox 
+             android:id="@+id/chkTermsAndConditions"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+            <TextView 
+                android:id="@+id/tvwTermsAndConditionsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_long_button"
+            android:onClick="onCreateAccountClick"
+            android:text="@string/create_account"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>

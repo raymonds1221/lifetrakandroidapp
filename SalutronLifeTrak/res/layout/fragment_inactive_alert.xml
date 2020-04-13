@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textviewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/status"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/textviewStatus"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textviewStatus" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchStatus"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textviewTD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/time_duration"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <RelativeLayout
+        android:id="@+id/relativeClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewTD"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewTD"
+        android:layout_toRightOf="@+id/textviewTD" >
+
+        <TextView
+            android:id="@+id/textviewTimeDurationMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/textviewTimeDurationLabelMinute"
+            android:gravity="right|center"
+            android:text="0"
+            android:textColor="@color/color_blue"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textviewTimeDurationLabelHour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/textviewTimeDurationMinute"
+            android:gravity="right|center"
+            android:padding="@dimen/user_profile_content_padding"
+            android:text="h"
+            android:textColor="@color/color_blue"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textviewTimeDurationHour"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/textviewTimeDurationLabelHour"
+            android:gravity="right|center"
+            android:text="0"
+            android:textColor="@color/color_blue"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textviewTimeDurationLabelMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right|center"
+            android:padding="@dimen/user_profile_content_padding"
+            android:text=" m"
+            android:textColor="@color/color_blue"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeClick"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textviewSTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view3"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/start_time"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <TextView
+        android:id="@+id/textviewStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewSTime"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewSTime"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textviewSTime"
+        android:gravity="right|center"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="7:00 AM"
+        android:textColor="@color/color_blue"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textviewStartTime"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textviewETime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view4"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/end_time"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <TextView
+        android:id="@+id/textviewEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewETime"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textviewETime"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textviewETime"
+        android:gravity="right|center"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="12:00 PM"
+        android:textColor="@color/color_blue"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textviewEndTime"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textViewST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/steps_threshold"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <TextView
+        android:id="@+id/textviewStepsThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewST"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewST"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewST"
+        android:gravity="right|center"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/string_steps_inactive"
+        android:textSize="@dimen/total_active_time_textsize"
+        tools:ignore="HardcodedText" />
+
+    <SeekBar
+        android:id="@+id/seekBarStepsThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewStepsThreshold"
+        android:max="999" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarStepsThreshold"
+        android:paddingBottom="@dimen/user_profile_content_padding"
+        android:paddingLeft="@dimen/user_profile_content_padding"
+        android:text="@string/start_number"
+        android:textSize="@dimen/to_date_textsize" />
+
+    <TextView
+        android:id="@+id/tvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvStart"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/seekBarStepsThreshold"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/user_profile_content_padding"
+        android:paddingRight="@dimen/user_profile_content_padding"
+        android:text="@string/end_number"
+        android:textSize="@dimen/to_date_textsize" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvEnd"
+        android:background="#c0c0c0" />
+
+    <EditText
+        android:id="@+id/editTextStepThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewStepsThreshold"
+        android:layout_alignTop="@+id/textviewStepsThreshold"
+        android:layout_toLeftOf="@+id/textviewStepsThreshold"
+        android:inputType="number"
+        android:maxLength="3" >
+    </EditText>
+
+</RelativeLayout>

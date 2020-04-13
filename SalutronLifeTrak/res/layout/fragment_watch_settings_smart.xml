@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white" >
+
+    <include layout="@layout/watch_settings_smart_calibration_steps" />
+
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" /> -->
+
+    <include layout="@layout/watch_settings_smart_calibration_distance" />
+
+    <include layout="@layout/watch_settings_smart_calibration_calories" />
+    <TextView
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:gravity="bottom"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:text="@string/smart_auto_el_caption"
+          android:textColor="@color/color_unit"
+          android:textSize="16sp"
+          android:visibility="gone"
+          android:background="@color/color_user_profile_bg" />
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@android:color/darker_gray"/>
+        <Switch
+	        android:id="@+id/smart_auto_el"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/smart_auto_el_caption"
+	        android:padding="10dp"
+	        />
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+        
+</LinearLayout>

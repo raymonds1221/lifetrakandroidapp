@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/sync_view_margin_top"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+    <TextView 
+        android:id="@+id/tvwSyncStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/syncing_data"
+        android:textSize="@dimen/sync_status_textsize" />
+    <ImageView 
+        android:id="@+id/imgSyncStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvwSyncStatus"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ll_preloader_default"
+        android:contentDescription="@string/sync_status" />
+</RelativeLayout>

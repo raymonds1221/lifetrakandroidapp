@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout 
+        android:id="@+id/frmSleepDataPlotContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/ll_sleep_graph_bg_container" />
+    <FrameLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/color_xaxis_bar">
+	      <TextView 
+	          android:id="@+id/tvwSleepTimeStart"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_marginLeft="5dp"
+	          android:text="@string/three_pm"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	      <TextView 
+	          android:id="@+id/tvwSleepTimeEnd"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="right"
+	          android:layout_marginRight="5dp"
+	          android:text="@string/three_pm"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	</FrameLayout>
+</LinearLayout>

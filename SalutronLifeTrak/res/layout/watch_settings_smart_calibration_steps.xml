@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_steps_caption"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> -->
+
+    <!-- <RadioGroup
+        android:id="@+id/rdgStepsCalibration"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/smart_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:drawableRight="@drawable/selector_checkbox"
+            android:gravity="left"
+            android:text="@string/smart_default_caption" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smart_default_hint"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" /> -->
+
+        <!-- <RadioButton
+            android:id="@+id/smart_optionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_checkbox"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:text="@string/smart_optionA_caption" /> -->
+
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smart_optionA_hint"
+            android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+        <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" /> -->
+
+        <!-- <RadioButton
+            android:id="@+id/smart_optionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableRight="@drawable/selector_checkbox"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:text="@string/smart_optionB_caption" /> -->
+
+        <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smart_optionB_hint"
+            android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+    <!-- </RadioGroup> -->
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+  <TableRow
+      android:background="@color/color_user_profile_bg" >
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:layout_weight="1"
+          android:gravity="bottom"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:text="@string/smart_steps_caption"
+          android:textColor="@color/color_unit"
+          android:textSize="16sp" />
+    </TableRow>  
+    <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    <RadioGroup
+        android:id="@+id/rdgStepsCalibration"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+    <TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+            <RadioButton
+	            android:id="@+id/smart_default"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:button="@null"
+	            android:checked="true"
+	            android:drawableRight="@drawable/selector_checkbox"
+	            android:gravity="left"
+	            android:text="@string/smart_default_caption"
+	            android:layout_weight="1"
+	            android:textSize="18sp" />
+    </TableRow>
+    <TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        	<TextView
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:gravity="left|bottom"
+        	    android:text="@string/smart_default_hint"
+        	    android:textColor="@color/color_black_text"
+        	    android:textSize="13sp" />
+
+    </TableRow>
+    <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+	<TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+            <!-- <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/smart_optionA_caption"
+	            android:gravity="left|bottom"
+	            android:textSize="18sp"
+	            android:textColor="@color/color_black_text" /> -->
+            <RadioButton
+	            android:id="@+id/smart_optionA"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:button="@null"
+	            android:drawableRight="@drawable/selector_checkbox"
+	            android:gravity="left"
+	            android:paddingTop="5dp"
+	            android:text="@string/smart_optionA_caption" 
+	            android:textSize="18sp"
+	            android:layout_weight="1"
+            	android:layout_span="2"/>
+    </TableRow>
+    <TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        	<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/smart_optionA_hint"
+	            android:gravity="center_vertical"
+	            android:maxLines="2"
+	            android:textSize="13sp"
+	            android:textColor="@color/color_black_text"
+	             />
+    </TableRow>
+    <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    <TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+            <!-- <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/smart_optionB_caption"
+	            android:gravity="left|bottom"
+	            android:textSize="18sp"
+	            android:textColor="@color/color_black_text" /> -->
+            <RadioButton
+	            android:id="@+id/smart_optionB"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:button="@null"
+	            android:drawableRight="@drawable/selector_checkbox"
+	            android:gravity="left"
+	            android:paddingTop="5dp"
+	            android:text="@string/smart_optionB_caption"
+	            android:textSize="18sp" />
+    </TableRow>
+    <TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        	<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/smart_optionB_hint"
+	            android:gravity="center_vertical"
+	            android:maxLines="2"
+	            android:textSize="13sp"
+	            android:textColor="@color/color_black_text" />
+    </TableRow>
+    <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    </RadioGroup>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath ('com.android.tools.build:gradle:1.1.0'){
+            exclude module: 'proguard-gradle'
+        }
+        classpath "jp.leafytree.gradle:gradle-android-scala-plugin:1.3.1"
+        classpath ('net.sf.proguard:proguard-gradle:5.0') {
+            force = true
+        }
+    }
+}
+
+allprojects {
+    // Common Android configuration
+    plugins.matching { it.class.name in ['com.android.build.gradle.AppPlugin', 'com.android.build.gradle.LibraryPlugin'] }.all {
+        android {
+            compileSdkVersion 19
+            buildToolsVersion "21.1.2"
+
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_1_7
+                targetCompatibility = JavaVersion.VERSION_1_7
+            }
+
+            // Enable predexing for now because the build fails when it's disabled.
+            //
+            // Disable predexing in Jenkins
+            //dexOptions {
+            //    preDexLibraries = System.getenv('JENKINS_HOME') == null
+            //}
+
+            // FIXME: Do this for now until all the lint issues are fixed
+            lintOptions {
+                abortOnError false
+            }
+        }
+    }
+
+    // Enable all compiler warnings
+    afterEvaluate {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << '-Xlint:all'
+        }
+    }
+}

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:paddingLeft="@dimen/user_profile_content_padding"
+    android:paddingRight="@dimen/user_profile_content_padding"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@color/color_gray"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:text="@string/login_as" />
+
+
+        <TextView
+            android:id="@+id/textview_logged_in_as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_alignParentRight="true"
+            android:minHeight="48dp"
+            android:textColor="@color/color_gray"
+            android:textSize="14sp"
+            android:text="blah@gmail.com"
+            android:gravity="left|center"
+            android:clickable="true" />
+
+    </RelativeLayout>
+    <View style="@style/Separator.Horizontal"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_fname"
+        android:visibility="gone"
+        android:minHeight="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:id="@+id/tv_fname_d"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@color/color_gray"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:text="@string/firstname" />
+
+
+        <TextView
+            android:id="@+id/textview_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_toRightOf="@+id/tv_fname_d"
+            android:layout_alignParentRight="true"
+            android:imeOptions="actionDone"
+            android:minHeight="48dp"
+            android:textColor="@color/color_black_text"
+            android:textSize="14sp"
+            android:text="puzo"
+            android:gravity="right|center"
+            android:background="@null"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_fname_edit"
+
+        android:minHeight="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@color/color_gray"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:id="@+id/tv_fname_desc"
+            android:text="@string/firstname" />
+
+
+        <EditText
+            android:id="@+id/textview_first_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_fname_desc"
+            android:imeOptions="actionDone"
+            android:minHeight="48dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/button_fname_save"
+            android:textColor="@color/color_black_text"
+            android:textSize="14sp"
+            android:text="puzo"
+            android:gravity="right|center"
+            android:background="@null"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:text="@string/save"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_white"
+           android:background="@drawable/selector_long_button"
+            android:layout_toLeftOf="@+id/button_fname_cancel"
+            android:id="@+id/button_fname_save"
+            android:layout_alignParentTop="true"
+
+            />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:visibility="gone"
+            android:textColor="@color/color_white"
+            android:layout_height="38dp"
+            android:text="@string/cancel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_long_button"
+            android:minWidth="80dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/button_fname_cancel"
+            android:layout_alignParentTop="true"
+            />
+
+
+    </RelativeLayout>
+
+    <View style="@style/Separator.Horizontal"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_lname"
+        android:visibility="gone"
+        android:minHeight="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@color/color_gray"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:id="@+id/tv_lname_d"
+            android:text="@string/lastname" />
+
+
+        <TextView
+            android:id="@+id/textview_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_alignParentRight="true"
+            android:minHeight="48dp"
+            android:imeOptions="actionDone"
+            android:layout_toRightOf="@+id/tv_lname_d"
+            android:textColor="@color/color_black_text"
+            android:textSize="14sp"
+            android:text="puzo"
+            android:gravity="right|center"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_lname_edit"
+        android:minHeight="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@color/color_gray"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:id="@+id/tv_lname_desc"
+            android:text="@string/lastname"  />
+
+
+        <EditText
+            android:id="@+id/textview_last_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_lname_desc"
+            android:imeOptions="actionDone"
+            android:minHeight="48dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/button_lname_save"
+            android:textColor="@color/color_black_text"
+            android:textSize="14sp"
+            android:text="puzo"
+            android:gravity="right|center"
+            android:background="@null"
+            />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/save"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_white"
+            android:visibility="gone"
+            android:background="@drawable/selector_long_button"
+            android:layout_toLeftOf="@+id/button_lname_cancel"
+            android:id="@+id/button_lname_save"
+            android:layout_alignParentTop="true"
+
+            />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:textColor="@color/color_white"
+            android:layout_height="38dp"
+            android:text="@string/cancel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_long_button"
+            android:minWidth="80dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/button_lname_cancel"
+            android:layout_alignParentTop="true"
+            />
+
+
+    </RelativeLayout>
+
+    <View style="@style/Separator.Horizontal"></View>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:id="@+id/relative_weight"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textSize="@dimen/connect_to_device_textsize"
+        android:textColor="@color/color_gray"
+        android:gravity="left|center"
+        android:text="@string/weight" />
+
+    <EditText
+
+        android:id="@+id/tvwWeightValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:minHeight="48dp"
+        android:background="@null"
+        android:textColor="@color/color_black_text"
+
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:inputType="number"
+        android:text="1245"
+        android:textSize="14sp"
+        android:maxLength="3"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/tvwWeightUnit" />
+    <TextView
+        android:id="@+id/tvwWeightUnit"
+        android:layout_width="wrap_content"
+        android:minHeight="48dp"
+
+        android:layout_marginLeft="5dp"
+        android:text="kg"
+        android:layout_alignParentRight="true"
+       android:gravity="center"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/tvwWeightValue" />
+</RelativeLayout>
+
+    <View style="@style/Separator.Horizontal"></View>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:id="@+id/relative_height"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:textSize="@dimen/connect_to_device_textsize"
+            android:textColor="@color/color_gray"
+            android:gravity="left|center"
+            android:id="@+id/tvheightlabel"
+            android:text="@string/height" />
+        <EditText
+            android:id="@+id/tvwHeightValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:minHeight="48dp"
+            android:layout_toRightOf="@+id/tvheightlabel"
+            android:textColor="@color/color_black_text"
+            android:background="@null"
+            android:gravity="center|right"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:inputType="number"
+            android:text="1245"
+            android:textSize="14sp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/tvwHeightUnit" />
+        <TextView
+            android:id="@+id/tvwHeightUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/tvwHeightValue"
+            android:minHeight="48dp"
+            android:text="cm"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <View style="@style/Separator.Horizontal"></View>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textSize="@dimen/connect_to_device_textsize"
+        android:textColor="@color/color_gray"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center"
+        android:text="@string/birthday" />
+
+
+    <TextView
+        android:id="@+id/tvwBirthdayValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_alignParentRight="true"
+        android:minHeight="48dp"
+        android:textColor="@color/color_black_text"
+        android:textSize="14sp"
+        android:text="vb"
+        android:gravity="left|center"
+        android:clickable="true" />
+
+</RelativeLayout>
+
+
+
+    <View style="@style/Separator.Horizontal"></View>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="48dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/connect_to_device_textsize"
+                android:textColor="@color/color_gray"
+                android:text="@string/gender" />
+
+            <RadioGroup
+                android:id="@+id/rdgGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_choice"
+                    android:checked="true"
+                    android:text="@string/gender_male"
+                    android:textSize="@dimen/user_profile_gender_textsize"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/radFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_choice"
+                    android:text="@string/gender_female"
+                    android:textSize="@dimen/user_profile_gender_textsize"
+                    android:textStyle="normal" />
+            </RadioGroup>
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

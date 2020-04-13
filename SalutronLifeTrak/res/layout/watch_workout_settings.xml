@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        style="@style/Separator.Horizontal"
+        android:visibility="gone"
+        android:id="@+id/view_for_workout_hr_logging"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/Linear_workout_hr_logging"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/workout_hr_logging"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_hr_logging_rate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="1 sec"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        style="@style/Separator.Horizontal"
+        android:visibility="gone"
+        android:id="@+id/view_for_workout_storage_left"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/Linear_workout_storage_left"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/storage_left"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_workout_storage_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="11.5 hours"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        style="@style/Separator.Horizontal"
+        android:visibility="gone"
+        android:id="@+id/view_for_reconnect_timeout"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/Linear_workout_reconnect_timeout"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/workout_reconnect_time"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_workout_reconnect_timeout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="5 sec"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

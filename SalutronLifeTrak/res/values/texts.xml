@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Connect Watch -->
+    <string name="connect_a_new_watch">Connect a New Watch</string>
+    <string name="connect_your_watch">Connect Your Watch</string>
+    <string name="connect_to_device">CONNECT TO DEVICE</string>
+    <string name="set_up_device">Set up Device</string>
+
+    <!-- Pair Watch -->
+    <string name="pair_device_title">Pair</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="pair_watch_message">Make sure that the bluetooth of the watch is turned on.</string>
+    <string name="delete">Delete</string>
+    <string name="pairing">Pairing</string>
+    <string name="pairing_instruction">Press and hold lower right button to begin updating.</string>
+
+    <!-- Dialogs -->
+    <string name="try_again_buton_text">Try Again</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_goals">Goals</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_partners">Partners</string>
+    <string name="nav_help">Help</string>
+    <string name="nav_signout">Sign out</string>
+    
+    <!-- Dashboard -->
+    <string name="sync">SYNC</string>
+    <string name="steps">STEPS</string>
+    <string name="distance">DISTANCE</string>
+    <string name="calories">CALORIES</string>
+    <string name="heart_rate">HEART RATE</string>
+    <string name="avg_heart_rate">AVG HEART RATE</string>
+    <string name="avg_heart_rate_unit">bpm</string>
+    <string name="sleep_hour_unit">h</string>
+    <string name="sleep_minute_unit">m</string>
+    <string name="todays_sleep">TODAY\'S SLEEP</string>
+    <string name="workout">WORKOUT</string>
+    <string name="light_exposure">BRIGHT LIGHT EXPOSURE</string>
+
+    <!-- User Profile -->
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="feet">ft</string>
+    <string name="inch">in</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="set">Set</string>
+
+    <!-- Graphs -->
+    <string name="day">DAY</string>
+    <string name="week">WEEK</string>
+    <string name="month">MONTH</string>
+    <string name="year">YEAR</string>
+    <string name="goal">GOAL</string>
+
+    <!-- Fitness Results -->
+    <string name="ellipses">&#8230;</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="loading_text">Loading</string>
+
+    <string-array name="calendar_mode_spinner">
+        <item>DAILY</item>
+        <item>WEEKLY</item>
+        <item>MONTHLY</item>
+        <item>YEARLY</item>
+    </string-array>
+
+    <!-- Actigraphy -->
+    <string name="total_active_time">TOTAL ACTIVE TIME</string>
+    <string name="total_active_time2">TOTAL ACTIVE TIME: <xliff:g name="total_active_time">%s</xliff:g></string>
+    <string name="total_sedentary_time">TOTAL SEDENTARY TIME: <xliff:g name="total_sedentary_time">%s</xliff:g></string>
+    <string name="total_sleep_time">TOTAL SLEEP TIME: <xliff:g name="total_sleep_time">%s</xliff:g></string>
+    <string name="actigraphy_hr">hr</string>
+    <string name="actigraphy_min">min</string>
+    <string name="hour_12_am">12:00AM</string>
+    <string name="hour_11_pm">11:59PM</string>
+    <string name="awake">AWAKE</string>
+    <string name="active">ACTIVE</string>
+    <string name="deep_sleep">DEEP SLEEP</string>
+    <string name="light_sleep">LIGHT SLEEP</string>
+    <string name="number_of_times"><xliff:g name="num_times">%s</xliff:g> times</string>
+
+    <string name="caption_12_hour">12 hour</string>
+    <string name="caption_24_hour">24 hour</string>
+
+    <string name="caption_unit_metric">Metric</string>
+    <string name="caption_unit_imperial">Imperial</string>
+
+    <!-- Goal -->
+    <string name="goal_iteration_label">No value</string>
+    <string name="goal_value">0000</string>
+    <string name="action_sync_goal">Sync</string>
+    <string name="action_reset_goal">Reset</string>
+
+    <string-array name="goals_menu_items">
+        <item>Sync</item>
+        <item>Reset</item>
+        <item>Restore to Previous</item>
+    </string-array>
+
+    <!-- Workout -->
+    <string name="total_calories">TOTAL CALORIES:</string>
+    <string name="total_steps">TOTAL STEPS:</string>
+    <string name="total_distance">TOTAL DISTANCE:</string>
+    <string name="workout_start_time">WORKOUT START TIME:</string>
+    <string name="total_workout_time">TOTAL WORKOUT TIME:</string>
+
+    <!-- Heart Rate -->
+    <string name="avg_bpm2">AVG BPM</string>
+    <string name="light">LIGHT</string>
+    <string name="max">MAX</string>
+    <string name="max_bpm">MAX BPM</string>
+    <string name="min_bpm">MIN BPM</string>
+
+    <string name="max_bpm_label">MAX HEART RATE</string>
+    <string name="min_bpm_label">MIN. HEART RATE</string>
+    <string name="intense_label">INTENSE HR DURATION</string>
+
+    <!-- Sleep data -->
+    <string name="total_sleep_time2">TOTAL SLEEP TIME</string>
+    <string name="three_pm">3PM</string>
+    <string name="fifteen_hour">15:00</string>
+    <string name="total_time_asleep">TOTAL TIME ASLEEP: </string>
+    <string name="sleep_start_time">SLEEP START TIME: </string>
+    <string name="sleep_efficiency">SLEEP EFFICIENCY: </string>
+    <string name="hours_awake">HOURS AWAKE: </string>
+    <string name="wake_after_sleep_onset">WAKE AFTER SLEEP ONSET: </string>
+    <string name="number_of_awakenings">NUMBER OF AWAKENINGS: </string>
+    <string name="sleep_onset_latency">SLEEP ONSET LATENCY: </string>
+
+    <!-- Watch Settings -->
+    <string name="urwatch_caption">Your Watch</string>
+    <string name="urwatch_name">Lifetrak</string>
+    <string name="urwatch_disconnect">Disconnect Watch</string>
+    <string name="urprofile_caption">Your Profile</string>
+    <string name="urprofile_weight_caption">Weight</string>
+    <string name="urprofile_height_caption">Height</string>
+    <string name="urprofile_dob_caption">Birthday</string>
+    <string name="urprofile_male_option_caption">Male</string>
+    <string name="urprofile_female_option_caption">Female</string>
+    <string name="unitprefs_caption">PREFERENCES</string>
+
+    <string name="watch_setting_caption">WATCH SETTINGS</string>
+    <string name="app_setting_caption">APP SETTINGS</string>
+    <string name="cloud_setting_caption">CLOUD SETTINGS</string>
+    <string name="workout_setting_caption">WORKOUT SETTINGS</string>
+    <string name="unitprefs_date_caption">Date</string>
+    <string name="unitprefs_date_option1_caption">MM/DD/YY</string>
+    <string name="unitprefs_date_option2_caption">DD/MM/YY</string>
+    <string name="unitprefs_date_option3_caption">"MMM/DD"</string>
+    <string name="unitprefs_date_option4_caption">"DD/MMM"</string>
+    <string name="unitprefs_time_caption">Time Format</string>
+    <string name="date_caption">Date Format</string>
+    <string name="device_name_caption">Device name</string>
+    <string name="unitprefs_time_option1">12HR</string>
+    <string name="unitprefs_time_option2">24HR</string>
+    <string name="unitprefs_unit_option1">IMPERIAL</string>
+    <string name="wdprefs_unit_option1">SIMPLE</string>
+    <string name="wdprefs_unit_option2">FULL</string>
+    <string name="unitprefs_unit_caption">Units</string>
+    <string name="watch_display_caption">Watch Display</string>
+    <string name="workout_hr_logging">HR Logging Rate</string>
+    <string name="storage_left">Storage Left</string>
+    <string name="workout_reconnect_time">Reconnect Time</string>
+    <string name="workout_storage_left">Workout Storage Left</string>
+    <string name="unitprefs_unit_option2">METRIC</string>
+    <string name="urprofile_gender_caption">Sex</string>
+    <string name="smart_default_caption">Default</string>
+    <string name="smart_optionA_caption">Option A</string>
+    <string name="smart_optionB_caption">Option B</string>
+    <string name="smart_steps_caption">STEPS</string>
+    <string name="smart_distance_caption">Distance</string>
+    <string name="smart_default_hint">Recommended for walking and running.</string>
+    <string name="smart_optionA_hint">Recommended for low intensity walking or mild\njogging.</string>
+    <string name="smart_optionB_hint">Alternate sensing orientation if the above two options does not provide accurate enough step values.</string>
+    <string name="smart_calibration_btn_caption">Smart Calibration</string>
+
+    <string name="settings_calibration_btn_caption_subtitle">Customize watch sensitivty for calories and \n distance</string>
+
+    <!-- Alert Settings -->
+    <string name="settings_alert_settings_btn_caption">Watch alarms</string>
+    <string name="settings_alert_wake_up_text">Intelligent Wake Up Alarm</string>
+    <string name="settings_alert_day_light_text">LightTrak Daylight Alert</string>
+    <string name="settings_alert_night_light_text">LightTrak Night light Alert</string>
+    <string name="settings_alert_inactive_text">Inactivity Alert</string>
+    <string name="settings_alert_autosync_alert">Sync Reminder</string>
+    <string name="settings_alert_autosync_onceaday">Once a day</string>
+    <string name="settings_alert_autosync_onceaweek">Once a week</string>
+    <string name="settings_alert_autosync_time">Sync watch to phone time</string>
+
+    <string name="btn_sync_settings_to_watch">Sync settings to watch</string>
+    
+    <!-- Notifications Settings -->
+    <string name="settings_notification_btn_caption">Notifications</string>
+    <string name="settings_notification_btn_caption_subtitle">Choose which phone notification to \ndisplay on watch</string>
+    <string name="settings_notif_enable">Enable Notification</string>
+    <string name="settings_notif_display_onwatch">Display on watch</string>
+    <string name="settings_notif_display_onwatch_when_awake">Only when awake</string>
+    <string name="settings_notif_display_onwatch_always">Always</string>
+    <string name="settings_notif_instruction">Choose what notifications to be displayed</string>
+    <string name="settings_notif_email">Email</string>
+    <string name="settings_notif_news">News</string>
+    <string name="settings_notif_incoming_call">Incoming Call</string>
+    <string name="settings_notif_missed_call">Missed Call</string>
+    <string name="settings_notif_sms">SMS</string>
+    <string name="settings_notif_mail">Mail</string>
+    <string name="settings_notif_social">Social</string>
+    <string name="settings_notif_voicemail">Voice Mail</string>
+    <string name="settings_notif_schedule">Schedule</string>
+    <string name="settings_notif_highpriority">High Priority</string>
+    <string name="settings_notif_instantmessage">Instant Message</string>
+    <string name="settings_notification">Notification Settings</string>
+    <string name="settings_saved">Successfully saved</string>
+
+    <!-- Application Settings -->
+    <string name="help">Help</string>
+    <string name="app_settings_compat_apps_btn_label">Compatible Apps</string>
+    <string name="support">Support</string>
+    <string name="app_settings_faq_btn_label">FAQ</string>
+    <string name="app_settings_guides_btn_label">User Guides</string>
+    <string name="app_settings_support_btn_label">Tech Support</string>
+    <string name="app_settings_message_center">Feedback</string>
+    <string name="app_settings_terms_and_conditions">Terms and Conditions</string>
+    <string name="map_my_fitness_btn_label">MapMyFitness</string>
+    <string name="action_settings">Settings</string>
+    <string name="smart_auto_el_caption">Auto EL</string>
+
+    <!-- Sleep Data -->
+    <string name="sleep_date_label">Sleep Date: <xliff:g name="sleep_date">%s</xliff:g></string>
+    <string name="start_time_label">Start Time:</string>
+    <string name="end_time_label">End Time:</string>
+    <string name="add">Add</string>
+    <!-- Profile Select -->
+    <string name="use_watch_button_text">Watch</string>
+    <string name="use_app_button_text">App</string>
+    <string name="do_not_show_again">Do not show this again.</string>
+
+    <!-- Server Integration -->
+    <string name="signin_via_email">SIGN IN VIA EMAIL</string>
+    <string name="signup_via_email">SIGN UP VIA EMAIL</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account">Create account</string>
+
+    <!-- Server Sync & Restore -->
+    <string name="view_my_account">view my account</string>
+    <string name="device_name">Device Name</string>
+    <string name="sync_to_cloud">Sync to cloud</string>
+    <string name="sync_to_watch">Sync to watch</string>
+    <string name="update_firmware">Update Firmware</string>
+    <string name="edit_account">EDIT ACCOUNT</string>
+    <string name="about_me">ABOUT ME</string>
+    <string name="your_watch">MY WATCH</string>
+    <string name="cloud_sync">CLOUD SYNC</string>
+    <string name="logout">Sign out</string>
+    <string name="login">Log in</string>
+    <string name="login_as">Logged in as</string>
+    <string name="signup">Sign up</string>
+    <string name="change_profile_pic">CHANGE PROFILE PICTURE</string>
+    <string name="account_details">ACCOUNT DETAILS</string>
+    <string name="password2">PASSWORD</string>
+    <string name="current">Current</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="send_reset_password">Send reset email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="switch_watch">Switch to a new watch</string>
+    <string name="switch_watch_caption">SWITCH WATCH</string>
+    <string name="reset_workout_caption">RESET WORKOUT</string>
+    <string name="enable_sync_to_cloud">Enable cloud sync</string>
+    <string name="retry">Retry</string>
+
+    <!-- Google Fit -->
+    <string name="google_fit">Google Fit</string>
+    <string name="google_fit_prompt">LifeTrak app will ask you to share data to Google Fit. This will allow you to use your LifeTrak fitness tracker with all your other favorite health and fitness apps that can connect to Google Fit.</string>
+    <string name="enable_sync_to_google_fit">Enable Sync to Google Fit</string>
+
+    <string-array name="image_items">
+        <item>Camera</item>
+        <item>Gallery</item>
+    </string-array>
+    <string-array name="partners_items">
+
+        <!-- <item>Compatible Apps</item> -->
+        <item>Rewards</item>
+    </string-array>
+
+    <!-- Walgreens -->
+    <string name="walgreens_balance_reward">Walgreens Balance&#0174; Rewards</string>
+    <string name="walgreens_get_points">Get Balance&#0174; Rewards points for the healthy activities you do every day.</string>
+    <string name="walgreens_connect">CONNECT</string>
+    <string name="walgreens_disconnect">DISCONNECT</string>
+
+    <!-- Prompts -->
+    <string name="prompt_title">PROMPTS</string>
+    <string name="prompt_updated_settins">Updated settings prompt</string>
+    <string name="prompt_updated_settins_subtitle">Get notification when watch and app settings don\'t match</string>
+    <string name="prompt_yes">YES</string>
+    <string name="prompt_yes_i_am">YES I AM</string>
+    <string name="prompt_no">No</string>
+    <string name="prompt_do_not_show_again">Do not show this dialog again</string>
+
+    <!-- Days -->
+    <string-array name="days">
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+    </string-array>
+    
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+
+    <!-- Inactive Alert -->
+    <string name="status">Status</string>
+    <string name="time_duration">Time Duration</string>
+    <string name="steps_threshold">Steps Threshold</string>
+    <string name="start_number">1</string>
+    <string name="end_number">999</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+
+    <!-- Day Light Alert Settings -->
+    <string name="exposure_level">Exposure Level</string>
+    <string name="exposure_duration">Exposure Duration</string>
+    <string name="alert_frequency">Alert Frequency</string>
+    <string name="day_night_min_alert_frequency">5</string>
+    <string name="day_night_max_alert_frequency">120</string>
+
+    <!-- Level -->
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="done">Done</string>
+
+    <!-- WakeUp Alert -->
+    <string name="wake_up_time">Wake Up Time</string>
+    <string name="intelligent_wake_up_start">Intelligent Wake Up starts</string>
+    <string name="minutes_earlier">minutes earlier</string>
+    <string name="select_time">Select Time</string>
+
+    <!-- Notification -->
+    <string name="enable_notification">Enable Notification</string>
+    <string name="display_watch">Display on watch</string>
+    <string name="choose_what_notif">Choose what notifications to be displayed</string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="missed_call">Missed Call</string>
+    <string name="sms">SMS</string>
+    <string name="mail">Mail</string>
+    <string name="voice_mail">Voice Mail</string>
+    <string name="schedule">Schedule</string>
+    <string name="news">News</string>
+    <string name="social">Social</string>
+    
+    <!-- Goal Items -->
+    <string name="bright_light_duration">BRIGHT LIGHT DURATION</string>
+	<string name="sleep">SLEEP</string>
+	
+	<string name="error_text">Error</string>
+	<string name="heart_rate_small">Heart rate</string>
+	<string name="sleep_small">Sleep</string>
+	<string name="workout_small">Workout</string>
+	
+	<!-- Actigraphy Item Fragment -->
+	<string name="active_time">Active Time</string>
+	<string name="sedentary">Sedentary</string>
+	<string name="light_sleep_small">Light Sleep</string>
+	<string name="medium_sleep">Medium Sleep</string>
+	<string name="deep_sleep_small">Deep Sleep</string>
+	<string name="times">times</string>
+	<string name="metric">Metric</string>
+	
+	<!-- Edit Profile Fragment -->
+	<string name="please_wait">Please wait&#8230;</string>
+	<string name="update_success">Updated successfully</string>
+	
+	<!-- Fitness Result Item Fragment -->
+	<string name="jan">Jan</string>
+	<string name="feb">Feb</string>
+	<string name="mar">Mar</string>
+	<string name="apr">Apr</string>
+	<string name="may">May</string>
+	<string name="jun">Jun</string>
+	<string name="jul">Jul</string>
+	<string name="aug">Aug</string>
+	<string name="sep">Sep</string>
+	<string name="oct">Oct</string>
+	<string name="nov">Nov</string>
+	<string name="dec">Dec</string>
+	<string name="calories_small">Calories</string>
+	<string name="steps_small">Steps</string>
+	<string name="distance_small">Distance</string>
+	
+	<!-- Goal Item Fragment -->
+	<string name="goal_updated"><xliff:g name="num_times">%s</xliff:g> goal successfully updated!</string>
+	<string name="goal_error"><xliff:g name="num_times">%s</xliff:g> goal was not updated! Error code:</string>
+	<string name="bright_light">Bright Light</string>
+	<string name="select_duration">Select Duration</string>
+	<string name="minute_earlier">minute earlier</string>
+	<string name="update_time_error">Update Time and Date Failed due to the following error code:</string>
+	
+	<!-- Workout Graph Item -->
+	<string name="time_caps">TIME</string>
+	
+	<!-- Alarm Service -->
+	<string name="scheduled_sync">You are scheduled to sync your watch</string>
+	
+	<!-- Log Sender Receiver -->
+	<string name="subject_title">LifeTrak Android App Support</string>
+	
+	<!-- Sync Status View -->
+	<!--<string name="sync_failed">Unable to sync with your LifeTrak watch</string>-->
+	
+	<!-- Delete Watch Async Task -->
+	<string name="delete_failed">"Failed to delete watch!"</string>
+	
+	<string name="please_fill">Please fill out all fields.</string>
+	
+	<!-- Server Sync Async Task -->
+	<string name="request_failed">Unable to send request</string>
+	
+	<string name="network_error">Network error</string>
+	<string name="minutes">minutes</string>
+    <string name="pairing_sync_text">We\'re sorry. Your watch data \n is not syncing to your app. \n\n Is your Bluetooth active? \n Please make sure that the Bluetooth \n is active on your watch. Press &amp; hold the\n bottom, right button to activate.</string>
+    <string name="pairing_sync_description">HELPFUL TIPS:\n- Make sure that Bluetooth is active on your phone / tablet.\n- Make sure your phone / tablet has more that 20% battery life, \n  as a low battery on your device may cause syncing issues. </string>
+    <string name="lollipop_issue">Having a lot of \n sync issues?\n Your watch may need\n an update. Sorry for the \n inconvenience</string>
+</resources>

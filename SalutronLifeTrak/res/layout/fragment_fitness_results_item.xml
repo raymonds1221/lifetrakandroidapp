@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RadioGroup 
+        android:id="@+id/rdgToDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/color_green_tint"
+        android:orientation="horizontal">
+        <RadioButton 
+            android:id="@+id/radDay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_left" />
+        <RadioButton 
+            android:id="@+id/radWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_mid" />
+        <RadioButton 
+            android:id="@+id/radMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_mid" />
+        <RadioButton 
+            android:id="@+id/radYear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/selector_to_date_text_color"
+            android:textSize="@dimen/to_date_textsize"
+            android:button="@null"
+            android:background="@drawable/selector_to_date_right" />
+    </RadioGroup>
+   <RelativeLayout 
+       android:id="@+id/topDataLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/fitness_resuls_stats_margin_vertical"
+       android:layout_marginTop="@dimen/fitness_resuls_stats_margin_horizontal"
+       android:layout_marginRight="@dimen/fitness_resuls_stats_margin_vertical"
+       android:layout_marginBottom="@dimen/fitness_resuls_stats_margin_horizontal">
+        <TextView 
+            android:id="@+id/tvwMetricTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calories"
+            android:textSize="@dimen/fitness_results_stat_metric_title_textsize" />
+        <TextView 
+            android:id="@+id/tvwMetricValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwMetricTitle"
+            android:textSize="@dimen/fitness_results_stat_metric_value_textsize"/>
+        <TextView 
+            android:id="@+id/tvwMetricValueUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwMetricTitle"
+            android:layout_toRightOf="@id/tvwMetricValue"
+            android:layout_marginTop="17dp"
+            android:textSize="20sp" />
+        <ImageView 
+            android:id="@+id/imgMetricIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvwMetricTitle"
+            android:layout_toRightOf="@id/tvwMetricValueUnit"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ll_fitnessres_icon_stat_calorie"
+            android:contentDescription="@string/fitness_results_stat_icon" />
+        <RelativeLayout 
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <ImageView 
+                android:id="@+id/imgMetricGoalIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ll_fitnessres_icon_goal_01"
+                android:contentDescription="@string/fitness_results_stat_goal" />
+            <TextView
+                android:id="@+id/tvwMetricGoalPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgMetricGoalIcon"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/fitness_results_stat_metric_goal_textsize" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/goal"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/fitness_results_stat_metric_goal_value_textsize" />
+                <TextView 
+                    android:id="@+id/tvwMetricGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/fitness_results_stat_metric_goal_value_textsize" />
+                <TextView 
+                    android:id="@+id/tvwMetricUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/fitness_results_stat_metric_goal_value_textsize" />
+            </LinearLayout>
+            <FrameLayout 
+                android:id="@+id/frmMetricProgressContainer"
+	            android:layout_width="match_parent"
+	            android:layout_height="5dp"
+	            android:layout_alignParentBottom="true"
+	            android:background="@color/color_gray">
+	            <View 
+	                android:id="@+id/viewMetricProgressValue"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:background="@color/color_25_percent" />
+	        </FrameLayout>
+        </RelativeLayout>
+   </RelativeLayout>
+   <FrameLayout 
+       android:id="@+id/frmFitnessResultsCenterContainer"
+       android:layout_width="match_parent"
+       android:layout_height="200dp">
+       <ImageView 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:scaleType="fitXY"
+           android:src="@drawable/ll_fitnessres_bg_graph"
+           android:contentDescription="@null" />
+	    <FrameLayout 
+	        android:id="@+id/frmFitnessResultsPlotContainer"
+	        android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+   </FrameLayout>
+   <FrameLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/color_gray"
+       android:visibility="gone">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/am"
+           android:textSize="@dimen/fitness_results_am_pm" />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right"
+           android:text="@string/pm"
+           android:textSize="@dimen/fitness_results_am_pm" />
+   </FrameLayout>
+   
+   <FrameLayout 
+	    android:id="@+id/frmFitnessResultsLoadingText"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone" >
+	    
+	    <TextView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="center"
+	          android:text="@string/loading_text"
+	          android:textSize="@dimen/fitness_results_am_pm" />
+	    
+	</FrameLayout>   
+   
+</LinearLayout>

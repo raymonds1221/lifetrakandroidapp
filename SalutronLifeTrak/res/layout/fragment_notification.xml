@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textviewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/enable_notification"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchEnableNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textviewStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/textviewStatus"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textviewStatus" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchEnableNotif"
+        android:background="#c0c0c0" />
+
+    <TextView
+        android:id="@+id/textViewisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/display_watch"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <TextView
+        android:id="@+id/textviewDisplayWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewisplay"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewisplay"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewisplay"
+        android:gravity="right|center"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/display_watch"
+        android:textColor="@color/color_blue"
+        android:textSize="@dimen/avg_bpm_textsize"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewisplay"
+        android:background="@color/color_light_gray"
+        android:gravity="center"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/choose_what_notif"
+        android:textColor="@color/color_dark_gray" />
+
+    <TextView
+        android:id="@+id/textViewIC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/incoming_call"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchIncomingCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewIC"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewIC"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewIC"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchIncomingCall"
+        android:background="#c0c0c0" />
+    
+       <TextView
+        android:id="@+id/textViewMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view2"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/missed_call"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchMissedCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewMC"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewMC"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewMC"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchMissedCall"
+        android:background="#c0c0c0" />
+    
+     <TextView
+        android:id="@+id/textViewSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view3"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/sms"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSMS"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewSMS"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewSMS"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchSMS"
+        android:background="#c0c0c0" />
+    
+     <TextView
+        android:id="@+id/textViewMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view4"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/mail"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewMail"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewMail"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewMail"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchMail"
+        android:background="#c0c0c0" />
+    
+    
+    <TextView
+        android:id="@+id/textViewVMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view5"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/voice_mail"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchVoiceMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewVMail"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewVMail"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewVMail"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchVoiceMail"
+        android:background="#c0c0c0" />
+    
+    <TextView
+        android:id="@+id/textViewSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view6"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/schedule"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSchedule"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewSchedule"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewSchedule"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchSchedule"
+        android:background="#c0c0c0" />
+    
+     <TextView
+        android:id="@+id/textViewNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view7"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/news"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewNews"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewNews"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewNews"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/switchNews"
+        android:background="#c0c0c0" />
+    
+    <TextView
+        android:id="@+id/textViewSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view8"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/social"
+        android:textSize="@dimen/total_active_time_textsize" />
+
+    <Switch
+        android:id="@+id/switchSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSocial"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewSocial"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/textViewSocial"
+        android:textSize="@dimen/total_active_time_textsize" />
+    
+
+</RelativeLayout>

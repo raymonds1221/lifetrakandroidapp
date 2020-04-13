@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+        <Spinner 
+	        android:id="@+id/spnCalendarMode"
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginRight="@dimen/fitness_landscape_stats_margin"
+                android:orientation="vertical">
+                <CheckBox 
+                    android:id="@+id/chkHeartRateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heart_rate"
+                    android:button="@drawable/selector_fitness_landscape_heartrate"
+                    android:drawablePadding="5dp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwHeartRateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:text="@string/ellipses"
+                    android:textSize="12sp"
+                    android:clickable="true" />
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginRight="@dimen/fitness_landscape_stats_margin"
+                android:orientation="vertical">
+                <CheckBox 
+                    android:id="@+id/chkStepsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/steps"
+                    android:button="@drawable/selector_fitness_landscape_steps"
+                    android:drawablePadding="5dp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwStepsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:text="@string/ellipses"
+                    android:textSize="12sp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwStepsGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:textSize="12sp" />
+                <FrameLayout
+                    android:id="@+id/frmStepsGoalContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/color_gray">
+                    <View 
+                        android:id="@+id/vwStepsGoalValue"
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:background="@color/color_25_percent" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginRight="@dimen/fitness_landscape_stats_margin"
+                android:orientation="vertical">
+                <CheckBox 
+                    android:id="@+id/chkCaloriesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calories"
+                    android:button="@drawable/selector_fitness_landscape_calories"
+                    android:drawablePadding="5dp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwCaloriesValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:text="@string/ellipses"
+                    android:textSize="12sp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwCaloriesGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:textSize="12sp" />
+                <FrameLayout
+                    android:id="@+id/frmCaloriesGoalContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/color_gray">
+                    <View 
+                        android:id="@+id/vwCaloriesGoalValue"
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:background="@color/color_25_percent" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="vertical">
+                <CheckBox
+                    android:id="@+id/chkDistanceLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/distance"
+                    android:button="@drawable/selector_fitness_landscape_distance"
+                    android:drawablePadding="5dp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwDistanceValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:text="@string/ellipses"
+                    android:textSize="12sp"
+                    android:clickable="true" />
+                <TextView 
+                    android:id="@+id/tvwDistanceGoal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+                    android:textSize="12sp" />
+                <FrameLayout
+                    android:id="@+id/frmDistanceGoalContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/color_gray">
+                    <View 
+                        android:id="@+id/vwDistanceGoalValue"
+                        android:layout_width="50dp"
+                        android:layout_height="5dp"
+                        android:background="@color/color_25_percent" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.salutron.lifetrakwatchapp.view.GraphScrollView
+            android:id="@+id/hsvGraphScroll"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scrollbars="none">
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View 
+                    android:id="@+id/viewGraphLeftPadding"
+                    android:layout_width="300dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_xaxis_bar" />
+                <FrameLayout 
+			        android:id="@+id/frmFitnessResultsPlotContainer"
+			        android:layout_width="6000dp"
+			        android:layout_height="match_parent"
+			        android:layout_marginTop="10dp"
+			        android:layout_toRightOf="@id/viewGraphLeftPadding" />
+                <View 
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/frmFitnessResultsPlotContainer"
+                    android:background="@color/color_xaxis_bar" />
+            </RelativeLayout>
+        </com.salutron.lifetrakwatchapp.view.GraphScrollView>
+        <ImageView 
+            android:id="@+id/imgPlayhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ll_fitnessresults_img_playhead"
+            android:contentDescription="@string/playhead" />
+    </FrameLayout>
+</LinearLayout>

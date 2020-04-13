@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize" >
+
+        <com.salutron.lifetrakwatchapp.view.ConnectionFailedView
+            android:id="@+id/cfvConnectionFailedNotif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/notif_Linear"
+             >
+
+            <Switch
+                android:id="@+id/notification_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:checked="true"
+                android:text="@string/settings_notif_enable" />
+
+            <View
+                android:id="@+id/view10"
+                style="@style/Separator.Horizontal" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/display_onwatch"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="UselessParent" >
+
+                    <TextView
+                        android:id="@+id/myLabel"
+                        style="@style/Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/settings_notif_display_onwatch" />
+
+                    <TextView
+                        android:id="@+id/display_onwatch_value_txv"
+                        style="@style/Label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/settings_notif_display_onwatch_when_awake"
+                        android:textColor="@color/color_blue" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/unitprefs_caption"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/color_light_gray"
+                android:gravity="center"
+                android:text="@string/settings_notif_instruction"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <Switch
+                android:id="@+id/email_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_email" />
+
+            <View
+                android:id="@+id/view1"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/news_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_news" />
+
+            <View
+                android:id="@+id/view2"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/incomingcall_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_incoming_call" />
+
+            <View
+                android:id="@+id/view3"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/missedcall_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_missed_call" />
+
+            <View
+                android:id="@+id/view4"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/sms_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_sms" />
+
+            <View
+                android:id="@+id/view5"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/voicemail_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_voicemail" />
+
+            <View
+                android:id="@+id/view6"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/schedule_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_schedule" />
+
+            <View
+                android:id="@+id/view7"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/highpriority_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_highpriority" />
+
+            <View
+                android:id="@+id/view8"
+                style="@style/Separator.Horizontal" />
+
+            <Switch
+                android:id="@+id/instantmessage_switch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/settings_notif_instantmessage" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

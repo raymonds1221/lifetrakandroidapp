@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <Spinner 
+            android:id="@+id/spnCalendarMode"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="October 20, 2014"
+                android:textSize="@dimen/year_textsize"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brightlight_exposure"
+                android:textSize="@dimen/total_sleep_time_textsize2"
+                
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="@dimen/fitness_results_stat_metric_value_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="hr"
+                    android:textSize="@dimen/sync_status_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fitness_landscape_stats_margin"
+                    android:text="20"
+                    android:textSize="@dimen/fitness_results_stat_metric_value_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:text="min"
+                    android:textSize="@dimen/sync_status_textsize"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/light_plot_land_circle_orange"
+                    android:minWidth="130dp"
+                    android:text="@string/brightlight_exposure_all_light"
+                    android:textSize="@dimen/calendar_day_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewAllLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="0 LX"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/light_plot_land_circle_blue"
+                    android:minWidth="130dp"
+                    android:text="@string/brightlight_exposure_blue_rich_Light"
+                    android:textSize="@dimen/calendar_day_textsize"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textViewBlueRichLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="0 LX"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/light_plot_land_circle_gray"
+                    android:minWidth="130dp"
+                    android:text="@string/brightlight_exposure_wrist_off"
+                    android:textSize="@dimen/calendar_day_textsize"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout 
+            android:id="@+id/relLeftTimeContainer"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <TextView 
+                android:id="@+id/tvwTimeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+            <TextView 
+                android:id="@+id/tvwTimeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp" />
+        </RelativeLayout>
+        <com.salutron.lifetrakwatchapp.view.GraphScrollView
+            android:id="@+id/hsvGraphScroll"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_toRightOf="@id/relLeftTimeContainer"
+            android:scrollbars="none">
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View 
+                    android:id="@+id/viewGraphLeftPadding"
+                    android:layout_width="400dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_xaxis_bar" />
+                <FrameLayout 
+			        android:id="@+id/chartLightPlot"
+			        android:layout_width="1500dp"
+			        android:layout_height="match_parent"
+			        android:layout_marginTop="10dp"
+			        android:layout_toRightOf="@id/viewGraphLeftPadding" />
+                <View 
+                    android:layout_width="350dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/chartLightPlot"
+                    android:background="@color/color_xaxis_bar" />
+            </RelativeLayout>
+        </com.salutron.lifetrakwatchapp.view.GraphScrollView>
+        <ImageView 
+            android:id="@+id/imgPlayhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ll_fitnessresults_img_playhead"
+            android:contentDescription="@string/playhead" />
+    </RelativeLayout>
+</LinearLayout>

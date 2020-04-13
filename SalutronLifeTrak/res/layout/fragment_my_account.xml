@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/scroll1"
+    android:background="@color/color_user_profile_bg">
+    <LinearLayout
+        android:layout_marginTop="@dimen/verify_user_profile_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:id="@+id/linear_main"
+        android:focusableInTouchMode="true"
+        android:minHeight="950dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fitness_landscape_stats_padding"
+            android:paddingRight="@dimen/fitness_landscape_stats_padding"
+            android:background="@color/color_user_profile_bg"
+
+            android:paddingBottom="@dimen/verify_user_profile_padding"
+            >
+            <ImageView 
+                android:id="@+id/imgProfilePic"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/lt_assets_profilepic"
+                android:contentDescription="@string/profile_pic" />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_change_profile_pic"
+                    android:textSize="@dimen/connect_to_device_textsize"
+                    android:textColor="@color/color_green_bg_selected"
+                    android:textStyle="bold"
+                    android:text="@string/change_profile_pic"
+                    android:gravity="left|center"
+                    android:clickable="true"/>
+                <TextView 
+                    android:id="@+id/tvwUserName"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvwUserEmail"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" />
+                <TextView 
+                    android:id="@+id/tvwEditAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/edit_account"
+                    android:visibility="gone"
+                    android:textColor="@color/color_link"
+                    android:textSize="15sp"
+                    android:clickable="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/about_me"
+            android:visibility="gone"
+            android:textSize="15sp"/>
+        <View style="@style/Separator.Horizontal"></View>
+
+        <include layout="@layout/fragment_my_account_user_profile" />
+
+        <View style="@style/Separator.Horizontal"></View>
+
+        <include layout="@layout/fragment_my_account_google_fit"/>
+        <View style="@style/Separator.Horizontal"></View>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center"
+            android:text="@string/my_account_info"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/your_watch"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/fragment_my_account_active_watch" />
+        </LinearLayout>
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/cloud_sync"
+            android:visibility="gone"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+           
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/google_fit"
+            android:textAllCaps="true"
+            android:textSize="15sp"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/selector_long_button"
+            android:text="@string/logout"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/linear_for_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/verify_user_profile_padding"
+                    android:paddingBottom="@dimen/user_profile_content_padding"
+                    android:paddingLeft="@dimen/user_profile_content_padding"
+                    android:text="@string/change_password"
+                    android:minHeight="35dp"
+                    android:textSize="@dimen/connect_to_device_textsize"
+                    android:textColor="@color/color_dark_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/verify_user_profile_padding"
+                    android:paddingBottom="@dimen/user_profile_content_padding"
+                    android:paddingRight="@dimen/user_profile_content_padding"
+                    android:visibility="gone"
+                    android:text="@string/save_changes"
+                    android:minHeight="35dp"
+                    android:clickable="true"
+                    android:id="@+id/textview_save_password"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/connect_to_device_textsize"
+                    android:textColor="@color/color_green_bg_selected"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+
+            <View style="@style/Separator.Horizontal"></View>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/user_profile_content_padding"
+                android:paddingRight="@dimen/user_profile_content_padding" >
+
+                <TableRow
+                    android:minHeight="48dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left|center"
+                        android:minHeight="48dp"
+                        android:textSize="@dimen/connect_to_device_textsize"
+                        android:textColor="@color/color_gray"
+                        android:text="@string/old_password" />
+
+                    <EditText
+                        android:id="@+id/edittext_old_password"
+                        android:layout_width="0dp"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="right|center"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        tools:ignore="LabelFor" />
+                </TableRow>
+                <View style="@style/Separator.Horizontal"></View>
+                <TableRow
+                    android:minHeight="48dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="left|center"
+                        android:minHeight="48dp"
+                        android:textSize="@dimen/connect_to_device_textsize"
+                        android:textColor="@color/color_gray"
+                        android:text="@string/new_password" />
+
+                    <EditText
+                        android:id="@+id/edittext_new_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="right|center"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        tools:ignore="LabelFor" />
+                </TableRow>
+                <View style="@style/Separator.Horizontal"></View>
+                <TableRow
+                    android:minHeight="48dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textSize="@dimen/connect_to_device_textsize"
+                        android:textColor="@color/color_gray"
+                        android:gravity="left|center"
+                        android:minHeight="48dp"
+                        android:text="@string/confirm_password" />
+
+                    <EditText
+                        android:id="@+id/edittext_confirm_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="right|center"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        tools:ignore="LabelFor" />
+                </TableRow>
+            </TableLayout>
+            <View style="@style/Separator.Horizontal"></View>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveChangesProfile"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/selector_long_button"
+            android:text="@string/save_changes"
+            android:textColor="@android:color/white" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <include layout="@layout/fragment_my_account_cloud_sync" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

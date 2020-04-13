@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="drag_handle" />
+    <item type="id" name="edtEmail" />
+    <item type="id" name="edtPassword" />
+    <item type="id" name="edtFirstname" />
+    <item type="id" name="edtLastname" />
+    <item type="id" name="edtConfirmPassword" />
+</resources>

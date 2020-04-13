@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView 
+        android:id="@+id/imgMenuIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ll_mnav_icon_home"
+        android:contentDescription="@string/menu_icon" />
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+        <TextView 
+	        android:id="@+id/tvwMenuItem"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginBottom="15dp"
+	        android:layout_gravity="center_vertical"
+	        android:textSize="@dimen/menu_textsize"
+	        android:textColor="@android:color/white" />
+        <View 
+            android:id="@+id/vwMenuSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_menu_separator" />
+    </LinearLayout>
+</LinearLayout>

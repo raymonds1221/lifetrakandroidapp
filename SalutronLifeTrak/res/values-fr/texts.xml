@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- Connect Watch -->
+    <string name="connect_a_new_watch">Connecter une nouvelle montre</string>
+    <string name="connect_your_watch">Connecter à l\'appareil</string>
+    <string name="connect_to_device">Connecter à l\'appareil</string>
+    <string name="set_up_device">Configuration de l\'appareil</string>
+    
+     <!-- Pair Watch -->
+    <string name="pair_device_title">Couplage</string>
+    <string name="cancel_button_text">Annuler</string>
+    <string name="continue_button_text">Continuer</string>
+    <string name="pair_watch_message">Veillez à ce que Bluetooth soit activé sur la montre.</string>
+    <string name="delete">Supprimer</string>
+    <string name="pairing">Jumelage</string>
+    <string name="pairing_instruction">Maintenez le bouton inférieur droit enfoncé pour commencer la mise à jour.</string>
+    
+    <!-- Dialogs -->
+    <string name="try_again_buton_text">Réessayer</string>
+    
+    <!-- Navigation -->
+    <string name="nav_dashboard">Tableau de bord</string>
+    <string name="nav_goals">Buts</string>
+    <string name="nav_settings">Paramètres</string>
+    <string name="nav_partners">Partenaires</string>
+    <string name="nav_help">Aide</string>
+    <string name="nav_signout">Fermer la session</string>
+    
+    <!-- Dashboard -->
+    <string name="sync">Synchroniser</string>
+    <string name="steps">PAS</string>
+    <string name="distance">DISTANCE</string>
+    <string name="calories">CALORIES</string>
+    <string name="heart_rate">FRÉQ CARD</string>
+    <string name="avg_heart_rate">FRÉQUENCE CARDIAQUE MOYENNE</string>
+    <string name="avg_heart_rate_unit">bpm</string>
+    <string name="sleep_hour_unit">h</string>
+    <string name="sleep_minute_unit">m</string>
+    <string name="todays_sleep">DE SOMMEIL AUJOURD\'HUI</string>
+    <string name="workout">EXERCICE</string>
+    <string name="light_exposure">EXPOSÉ À LA LUMIÉRE BRILLANT</string>
+    
+    <!-- User Profile -->
+    <string name="weight">POIDS</string>
+    <string name="height">TAILLE</string>
+    <string name="birthday">DATE DE NAISSANCE</string>
+    <string name="login_as">Connecté en tant que</string>
+    <string name="gender">SEXE</string>
+    <string name="gender_male">homme</string>
+    <string name="gender_female">femme</string>
+    <string name="feet">\'</string>
+    <string name="inch">\'\'</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
+    <string name="save">Enregistrer</string>
+    <string name="set">Fixé</string>
+    
+    <!-- Graphs -->
+    <string name="day">Jour</string>
+    <string name="week">Semaine</string>
+    <string name="month">Mois</string>
+    <string name="year">Année</string>
+    <string name="goal">But</string>
+    
+    <!-- Fitness Results -->
+    <string name="ellipses">&#8230;</string>
+    <!-- TODO -->
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="loading_text">Chargement</string>
+    
+    <string-array name="calendar_mode_spinner">
+        <item>JOURNALIER</item>
+        <item>HEBDOMADAIRE</item>
+        <item>MENSUEL</item>
+        <item>ANNUEL</item>
+    </string-array>
+    
+    <!-- Actigraphy -->
+    <string name="total_active_time">DURÉE D\'ACTIVITÉ TOTALE</string>
+    <string name="total_active_time2">DURÉE D\'ACTIVITÉ TOTALE: <xliff:g name="total_active_time">%s</xliff:g></string>
+    <string name="total_sedentary_time">DURÉE D\' INACTIVITÉ TOTALE: <xliff:g name="total_sedentary_time">%s</xliff:g></string>
+    <string name="total_sleep_time">DURÉE DE SOMMEIL TOTALE: <xliff:g name="total_sleep_time">%s</xliff:g></string>
+    <string name="actigraphy_hr">hr</string>
+    <string name="actigraphy_min">min</string>
+    <string name="hour_12_am">12:00AM</string>
+    <string name="hour_11_pm">11:59PM</string>
+    <string name="awake">ÉVEILLÉ</string>
+    <string name="active">ACTIF</string>
+    <string name="deep_sleep">SOMMEIL PROFOND</string>
+    <string name="light_sleep">LIGHT LÉGER</string>
+    <string name="number_of_times"><xliff:g name="num_times">%s</xliff:g> fois</string>
+    
+    <!-- Goal -->
+    <string name="goal_iteration_label">Aucune valeur</string>
+    <string name="goal_value">0000</string>
+    <string name="action_sync_goal">Synchroniser</string>
+    <string name="action_reset_goal">Réinitialiser</string>
+
+    <string-array name="goals_menu_items">
+        <item>Synchroniser</item>
+        <item>Réinitialiser</item>
+        <item>Restaurer précédent</item>
+    </string-array>
+    
+    <!-- Workout -->
+    <string name="total_calories">NOMBRE TOTAL DE CALORIES:</string>
+    <string name="total_steps">NOMBRE TOTAL DE PAS:</string>
+    <string name="total_distance">DISTANCE TOTALE:</string>
+    <string name="workout_start_time">DÉBUT DE LA PÉRIODE D\'ENTRAÎNEMENT:</string>
+    <string name="total_workout_time">DURÉE EXERCICE TOTALE:</string>
+    
+     <!-- Heart Rate -->
+    <string name="avg_bpm2">BPM MOY</string>
+    <string name="light">LÉGER</string>
+    <string name="max">MAX</string>
+    <string name="max_bpm">MAX BPM</string>
+    <string name="min_bpm">MIN BPM</string>
+
+    <!-- Sleep data -->
+    <string name="total_sleep_time2">DURÉE DE SOMMEIL TOTALE</string>
+    <string name="three_pm">3PM</string>
+    <string name="fifteen_hour">15:00</string>
+    <string name="total_time_asleep">DURÉE TOTALE DE SOMMEIL:</string>
+    <string name="sleep_start_time">HEURE DE DÉBUT DU SOMMEIL:</string>
+    <string name="sleep_efficiency">EFFICACITÉ DU SOMMEIL:</string>
+    
+    <!-- Watch Settings -->
+    <string name="urwatch_caption">Votre montre</string>
+    <string name="urwatch_name">Lifetrak</string>
+    <string name="urwatch_disconnect">Déconnecter la montre</string>
+    <string name="urprofile_caption">Votre profil</string>
+    <string name="urprofile_weight_caption">Poids</string>
+    <string name="urprofile_height_caption">Taille</string>
+    <string name="urprofile_dob_caption">Date de naissance</string>
+    <string name="urprofile_male_option_caption">Homme</string>
+    <string name="urprofile_female_option_caption">Femme</string>
+    <string name="unitprefs_caption">PRÉFÉRENCES</string>
+    <string name="watch_setting_caption">RÉGLAGES DE LA MONTRE</string>
+    <string name="workout_setting_caption">RÉGLAGES DE EXERCICES</string>
+    <string name="workout_hr_logging">HR Logging Rate</string>
+    <string name="workout_storage_left">Stockage Workout Gauche</string>
+    <string name="workout_reconnect_time">Reconnect Time</string>
+    <string name="reset_workout_caption">ENTRAÎNEMENT RAZ</string>
+    <string name="switch_watch_caption">INTERRUPTEUR MONTRE</string>
+    <string name="app_setting_caption">PARAMÈTRES DE L\'APPLICATION</string>
+    <string name="cloud_setting_caption">REGLAGES CLOUD</string>
+    <string name="unitprefs_date_caption">Date</string>
+    <string name="unitprefs_date_option1_caption">MM/JJ/AA</string>
+    <string name="unitprefs_date_option2_caption">JJ/MM/AA</string>
+    <string name="unitprefs_date_option3_caption">"MMM/JJ"</string>
+    <string name="unitprefs_date_option4_caption">"JJ/MMM"</string>
+    <string name="unitprefs_time_caption">Format des heures</string>
+    <string name="date_caption">Format de date</string>
+    <string name="caption_12_hour">12 heures</string>
+    <string name="caption_24_hour">24 heures</string>
+    <string name="unitprefs_time_option1">12HR</string>
+    <string name="unitprefs_time_option2">24HR</string>
+    <string name="unitprefs_unit_option1">IMPÉRIALES</string>
+    <string name="wdprefs_unit_option1">SIMPLE</string>
+    <string name="wdprefs_unit_option2">COMPLET</string>
+    <string name="unitprefs_unit_caption">Unités</string>
+    <string name="watch_display_caption">Affichage de la montre</string>
+    <string name="unitprefs_unit_option2">MÉTRIQUES</string>
+    <string name="urprofile_gender_caption">Sexe</string>
+    <string name="smart_default_caption">Par défaut</string>
+    <string name="smart_optionA_caption">Option A</string>
+    <string name="smart_optionB_caption">Option B</string>
+    <string name="smart_steps_caption">PAS</string>
+    <string name="device_name_caption">Nom de l\'appareil</string>
+    <string name="smart_distance_caption">Distance</string>
+    <string name="smart_default_hint">Recommandé pour la marche ou la course.</string>
+    <string name="smart_optionA_hint">Recommandée pour la marche ou la course de \nfaible intensité.</string>
+    <string name="smart_optionB_hint">Autre orientation de capture si les deux options ci-dessus ne fournissent pas de mesures suffisamment précises des pas.</string>
+    <string name="smart_calibration_btn_caption">Réglage intelligent</string>
+    <string name="settings_calibration_btn_caption_subtitle">Personnaliser la sensibilité de la montre pour les calories et \n la distance</string>
+    <!-- Alert Settings -->
+    <string name="settings_alert_settings_btn_caption">Paramètres des alertes</string>
+    <string name="settings_alert_wake_up_text">Intelligent réveil alarme</string>
+    <string name="settings_alert_day_light_text">LightTrak Daylight Alerte</string>
+    <string name="settings_alert_night_light_text">Alerte Nuit Lumière LightTrak</string>
+    <string name="settings_alert_inactive_text">Inactivité alerte</string>
+    <string name="settings_alert_autosync_alert">Sync Rappel</string>
+    <string name="settings_alert_autosync_onceaday">Une fois par jour</string>
+    <string name="settings_alert_autosync_onceaweek">Une fois par semaine</string>
+    <string name="settings_alert_autosync_time">Montre Sync en temps de téléphone</string>
+
+    <string name="btn_sync_settings_to_watch">Les paramètres de synchronisation à surveiller</string>
+    
+    <!-- Notifications Settings -->
+    <string name="settings_notification_btn_caption">Notifications</string>
+    <string name="settings_notification_btn_caption_subtitle">Choisissez quel téléphone notification \n display sur la montre</string>
+    <string name="settings_notif_enable">Activer les notifications</string>
+    <string name="settings_notif_display_onwatch">Afficher sur la montre</string>
+    <string name="settings_notif_display_onwatch_when_awake">Seulement lorsque réveillé</string>
+    <string name="settings_notif_display_onwatch_always">Toujurs</string>
+    <string name="settings_notif_instruction">Choisissez les notifications à afficher</string>
+    <string name="settings_notif_email">Courriel</string>
+    <string name="settings_notif_news">Actualités</string>
+    <string name="settings_notif_incoming_call">Appel entrant</string>
+    <string name="settings_notif_missed_call">Appel manqué</string>
+    <string name="settings_notif_sms">SMS</string>
+    <string name="settings_notif_mail">Courriel</string>
+    <string name="settings_notif_social">Social</string>
+    <string name="settings_notif_voicemail">Messagerie vocale</string>
+    <string name="settings_notif_schedule">Calendrier</string>
+    <string name="settings_notif_highpriority">Haute priorité</string>
+    <string name="settings_notif_instantmessage">Message instantané</string>
+    <string name="settings_notification">Notification Settings</string>
+    <string name="settings_saved">Successfully saved</string>
+    
+     <!-- Application Settings -->
+    <string name="help">Aide</string>
+    <string name="app_settings_compat_apps_btn_label">Apps Compatible</string>
+    <string name="support">Assistance</string>
+    <string name="app_settings_faq_btn_label">Questions fréquentes</string>
+    <string name="app_settings_guides_btn_label">Guides d\'utilisation</string>
+    <string name="app_settings_support_btn_label">Assistance technique</string>
+    <string name="app_settings_message_center">Commentaires</string>
+    <string name="app_settings_terms_and_conditions">Conditions d\'utilisation</string>
+    <string name="map_my_fitness_btn_label">MapMyFitness</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="smart_auto_el_caption">EL automatique</string>
+    
+    <!-- Sleep Data -->
+    <string name="sleep_date_label">Date de sommeil: <xliff:g name="sleep_date">%s</xliff:g></string>
+    <string name="start_time_label">Heure de début:</string>
+    <string name="end_time_label">Heure de fin:</string>
+    <string name="add">Ajout</string>
+    
+    <!-- Profile Select -->
+    <string name="use_watch_button_text">Montre</string>
+    <string name="use_app_button_text">Appli</string>
+    <string name="do_not_show_again">Ne plus afficher ce message.</string>
+    
+     <!-- Server Integration -->
+    <string name="signin_via_email">OUVRIR UNE SESSION PAR COURRIEL</string>
+    <string name="signup_via_email">S\'INSCRIRE PAR COURRIEL</string>
+    <string name="email">Courriel</string>
+    <string name="password">Mot de passe</string>
+    <string name="signin">Ouvrir une session</string>
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="create_account">Créer le compte</string>
+    
+    <!-- Server Sync & Restore -->
+    <string name="view_my_account">afficher mon comptet</string>
+    <string name="device_name">Nom de l\'appareil</string>
+    <string name="sync_to_cloud">Synchroniser sur le Cloud</string>
+    <string name="sync_to_watch">Synchroniser la montre</string>
+    <string name="edit_account">MODIFIER LE COMPTE</string>
+    <string name="about_me">À PROPOS DE MOI</string>
+    <string name="your_watch">MA MONTRE</string>
+    <string name="cloud_sync">CLOUD SYNC</string>
+    <string name="logout">Fermer la session</string>
+    <string name="login">Ouvrir une session</string>
+    <string name="signup">S\'inscrire</string>
+    <string name="change_profile_pic">CHANGER LA PHOTO DU PROFIL</string>
+    <string name="account_details">DÉTAILS DU COMPTE</string>
+    <string name="password2">Mot de passe</string>
+    <string name="current">Actuel</string>
+    <string name="change_password">CHANGER DE MOT DE PASSE</string>
+    <string name="old_password">Ancien mot de passe</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="save_changes"> ENREGISTRER LES MODIFICATIONS</string>
+    ENREGISTRER LES MODIFICATIONS
+    <string name="send_reset_password">Envoyer le courriel de réinitialisation</string>
+    <string name="reset_password">Réinitialiser le mot de passe</string>
+    <string name="switch_watch">Changer de montre</string>
+    <string name="enable_sync_to_cloud">Activer Sync au cloud</string>
+    <string name="retry">Refaire</string>
+
+    <!-- Google Fit -->
+    <string name="google_fit">Google Fit</string>
+
+    <string-array name="image_items">
+        <item>Caméra</item>
+        <item>Photothèque</item>
+    </string-array>
+    <string-array name="partners_items">
+
+        <!-- <item>Compatible Apps</item> -->
+        <item>Récompenses</item>
+    </string-array>
+
+    <!-- Walgreens -->
+    <string name="walgreens_balance_reward">Walgreens Balance&#0174; Récompenses</string>
+    <string name="walgreens_get_points">Get Balance&#0174; Gagnez des points pour les activités saines que vous réalisez tous les jours.</string>
+    <string name="walgreens_connect">Connexion</string>
+    <string name="walgreens_disconnect">Déconnexion</string>
+    
+     <!-- Prompts -->
+    <string name="prompt_title">INVITES</string>
+    <string name="prompt_updated_settins">Paramètres mis à jour invite</string>
+    <string name="prompt_updated_settins_subtitle">Obtenez une notification lorsque réglages de la montre et app ne correspondent pas</string>
+    <string name="prompt_yes">OUI</string>
+    <string name="prompt_yes_i_am">OUI</string>
+    <string name="prompt_no">Non</string>
+    <string name="prompt_do_not_show_again">Ne plus afficher ce message.</string>
+
+    <!-- Days -->
+    <string-array name="days">
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+    </string-array>
+    
+    <string name="sunday">Dimanche</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
+    
+    <string name="sun">Dim</string>
+    <string name="mon">Lun</string>
+    <string name="tue">Mar</string>
+    <string name="wed">Mer</string>
+    <string name="thu">Jeu</string>
+    <string name="fri">Ven</string>
+    <string name="sat">Sam</string>
+
+    <!-- Inactive Alert -->
+    <string name="status">État</string>
+    <string name="time_duration">Durée</string>
+    <string name="steps_threshold">Seuil des pas</string>
+    <string name="start_number">1</string>
+    <string name="end_number">999</string>
+    <string name="start_time">Heure de début</string>
+    <string name="end_time">Heure de fin</string>
+    
+    <!-- Day Light Alert Settings -->
+    <string name="exposure_level">Niveau d\'exposition</string>
+    <string name="exposure_duration">Durée d\'exposition</string>
+    <string name="alert_frequency">Fréquence des alertes</string>
+    <string name="day_night_min_alert_frequency">5</string>
+    <string name="day_night_max_alert_frequency">120</string>
+
+    <!-- Level -->
+    <string name="low">Faible</string>
+    <string name="medium">Moyen</string>
+    <string name="high">Élevé</string>
+    <string name="done">Fini</string>
+    
+    <!-- WakeUp Alert -->
+    <string name="wake_up_time">Heure de réveil</string>
+    <string name="intelligent_wake_up_start">Intelligent réveil commence</string>
+    <string name="minutes_earlier">minutes plus tôt</string>
+    <string name="select_time">Choisissez l\'heure.</string>
+
+    <!-- Notification -->
+    <string name="enable_notification">Activer les notifications</string>
+    <string name="display_watch">Afficher sur la montre</string>
+    <string name="choose_what_notif">Choisissez les notifications à afficher</string>
+    <string name="incoming_call">Appel entrant</string>
+    <string name="missed_call">Appel manqué</string>
+    <string name="sms">SMS</string>
+    <string name="mail">Courriel</string>
+    <string name="voice_mail">Messagerie vocale</string>
+    <string name="schedule">Calendrier</string>
+    <string name="news">Actualités</string>
+    <string name="social">Social</string>
+    
+    <!-- Goal Items -->
+    <string name="bright_light_duration">DURÉE À LA LUMIÈRE VIVE</string>
+	<string name="sleep">SOMMEIL</string>
+	
+	<string name="error_text">Erreur</string>
+	<string name="heart_rate_small">Fréq card</string>
+	<string name="sleep_small">Sommeil</string>
+	<string name="workout_small">Exercice</string>
+	
+	<!-- Actigraphy Item Fragment -->
+	<string name="active_time">Durée d\'activité</string>
+	<string name="sedentary">Inactivité</string>
+	<string name="light_sleep_small">Light Léger</string>
+	<string name="medium_sleep">Moyen Léger</string>
+	<string name="deep_sleep_small">Sommeil Profond</string>
+	<string name="times">de fois</string>
+	<string name="metric">Métriques</string>
+	
+	<!-- Edit Profile Fragment -->
+	<string name="please_wait">Veuillez patienter&#8230;</string>
+	<string name="update_success">Mise à jour réussie</string>
+	
+	<!-- Fitness Result Item Fragment -->
+	<string name="jan">Janv</string>
+	<string name="feb">Févr</string>
+	<string name="mar">Mars</string>
+	<string name="apr">Avr</string>
+	<string name="may">Mai</string>
+	<string name="jun">Juin</string>
+	<string name="jul">Juil</string>
+	<string name="aug">Août</string>
+	<string name="sep">Sep</string>
+	<string name="oct">Oct</string>
+	<string name="nov">Nov</string>
+	<string name="dec">Déc</string>
+    <string name="calories_small">Calories</string>
+    <string name="steps_small">Pas</string>
+    <string name="distance_small">Distance</string>
+    
+    <!-- Goal Item Fragment -->
+	<string name="goal_updated">La mise à jour des objectifs a réussi à <xliff:g name="num_times">%s</xliff:g> pour cent</string>
+	<string name="goal_error">La mise à jour des objectifs a échoué à <xliff:g name="num_times">%s</xliff:g> pour cent! Erreur de code :</string>
+	<string name="bright_light">Lumière vive</string>
+	<string name="select_duration">Paramétrez la durée</string>
+	<string name="minute_earlier">minute plus tôt</string>
+	<string name="update_time_error">La mise à jour de l\'heure et de la date a échoué en raison de l\'erreur dont le code est :</string>
+	
+	<!-- Workout Graph Item -->
+	<string name="time_caps">DURÉE</string>
+	
+	<!-- Alarm Service -->
+	<string name="scheduled_sync">Il est temps de synchroniser votre montre.</string>
+	
+	<!-- Log Sender Receiver -->
+	<string name="subject_title">Assistance pour l\'application LifeTrak Android</string>
+
+	<!-- Sync Status View -->
+	<!--<string name="sync_failed">La synchronisation a échoué.</string>-->
+
+	<!-- Delete Watch Async Task -->
+	<string name="delete_failed">Impossible de supprimer l\'appareil.</string>
+	
+	<!-- Server Sync Async Task -->
+	<string name="request_failed">Impossibilité d\'envoyer votre demande</string>
+	<string name="network_error">Erreur de réseau</string>
+	<string name="minutes">minutes</string>
+
+    <string name="pairing_sync_text">Nous sommes désolés. Les données de votre montre \n ne synchronise pas à votre application. \n\n Bluetooth est votre actif? \n S\'il vous plaît assurez-vous que le Bluetooth \n est active sur votre montre . Appuyez et maintenez la \n en bas , bouton droit pour activer .</string>
+    <string name="pairing_sync_description">CONSEILS PRATIQUES :\n- Assurez-vous que Bluetooth est activé sur votre téléphone / tablette.\n- Assurez-vous que votre téléphone / tablette a la vie de batterie plus que de 20% ,\n  comme une batterie faible sur votre appareil peut provoquer des problèmes de synchronisation .</string>
+	
+</resources>

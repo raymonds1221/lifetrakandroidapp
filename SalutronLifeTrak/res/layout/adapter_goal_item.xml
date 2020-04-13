@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/goal_iteration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/goal_iteration_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/goal_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goal_iteration"
+        android:layout_marginTop="14dp"
+        android:text="@string/goal_value"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/goal_edit_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goal_iteration"
+        android:layout_marginTop="14dp"
+        android:text="@string/goal_value"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:textAppearance="?android:attr/textAppearanceLarge">
+        <requestFocus /> 
+    </EditText>
+    
+    <com.salutron.lifetrakwatchapp.view.BetterSeekBar
+        android:id="@+id/goal_value_seeker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goal_value"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/goal_value_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goal_value_seeker"
+        android:text="@string/goal_value"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/goal_value_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/goal_value_seeker"
+        android:text="@string/goal_value" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:id="@+id/day_light_alert_line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/goal_value_max"
+        android:background="@android:color/darker_gray" />
+    
+</RelativeLayout>

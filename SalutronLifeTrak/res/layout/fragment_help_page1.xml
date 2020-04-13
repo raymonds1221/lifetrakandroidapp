@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical" >
+
+    <!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/app_settings_compat_apps_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gradient_background"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/app_settings_compat_apps_btn_label" />
+ 	-->
+ 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/support"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/app_settings_faq_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gradient_background"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/app_settings_faq_btn_label" />
+
+    <Button
+        android:id="@+id/app_settings_guides_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gradient_background"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/app_settings_guides_btn_label" />
+
+    <Button
+        android:id="@+id/app_settings_support_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gradient_background"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/app_settings_support_btn_label" />
+    
+    <Button
+        android:id="@+id/app_message_center_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gradient_background"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/app_settings_message_center" />
+    
+    <Button
+        android:id="@+id/app_terms_and_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_gradient_background"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="@string/app_settings_terms_and_conditions" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:id="@+id/tbl_calories">
+    <TableRow
+      android:background="@color/color_user_profile_bg" >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:layout_weight="1"
+          android:gravity="bottom"
+          android:paddingBottom="5dp"
+          android:paddingLeft="10dp"
+          android:text="@string/calories"
+          android:textColor="@color/color_unit"
+          android:textSize="16sp" 
+          android:layout_span="2"/>
+    </TableRow>
+    <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+	<TableRow 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        	<TextView
+        	    android:id="@+id/smart_calorie_value"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_span="2"
+        	    android:layout_weight="1"
+        	    android:gravity="center"
+        	    android:maxLines="2"
+        	    android:paddingTop="10dp"
+        	    android:text="0%"
+        	    android:textColor="@color/color_black_text"
+        	    android:textSize="22sp"
+        	    android:textStyle="bold" />
+
+    </TableRow>
+    <TableRow>
+          <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp" 
+              android:layout_weight="1"
+              android:layout_span="2">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:text="-25%"
+                  android:textColor="@color/color_black_text"
+                  android:textSize="13sp"
+                  android:layout_weight="0.15" />
+              <com.salutron.lifetrakwatchapp.view.BetterSeekBar
+                  android:id="@+id/sbrCaloriesCalibration" 
+                  android:layout_width="218dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:layout_weight="0.7" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:text="+25%"
+                  android:textColor="@color/color_black_text"
+                  android:textSize="13sp" />
+
+          </LinearLayout> 
+    </TableRow>
+        <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+</TableLayout>

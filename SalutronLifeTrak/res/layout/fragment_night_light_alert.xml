@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/white">
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Switch
+        android:id="@+id/night_light_alert_switch_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:layout_weight="1"
+        android:layout_span="2" />
+    </TableRow>
+    <TableRow>
+        <View 
+            android:id="@+id/night_light_line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/night_light_exposure_level_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exposure_level" />
+        <TextView
+            android:id="@+id/night_light_alert_exposure_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Medium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_blue" 
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow>
+        <View
+            android:id="@+id/night_light_line2" 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="fill_parent" >
+        <TextView
+            android:id="@+id/night_light_exposure_duration_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exposure_duration" />
+
+        <!-- <TextView
+            android:id="@+id/night_light_alert_exposure_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="1h 29 m"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_blue" 
+            android:layout_weight="1"/> -->
+            <LinearLayout 
+                android:id="@+id/night_light_alert_exposure_duration"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="right">
+		        <TextView
+		            android:id="@+id/night_light_alert_exposure_duration_hour"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="1"
+		            android:textAppearance="?android:attr/textAppearanceSmall"
+		            android:textColor="@color/color_blue"/>
+		        <TextView
+		            android:id="@+id/night_light_alert_h"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text=" h "
+		            android:textAppearance="?android:attr/textAppearanceSmall"
+		            android:textColor="@color/color_blue"
+		            />
+		        <TextView
+		            android:id="@+id/night_light_alert_exposure_duration_minute"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="right"
+		            android:text="00"
+		            android:textAppearance="?android:attr/textAppearanceSmall"
+		            android:textColor="@color/color_blue"/>
+		        <TextView
+		            android:id="@+id/night_light_alert_m"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:gravity="right"
+		            android:text=" m"
+		            android:textAppearance="?android:attr/textAppearanceSmall"
+		            android:textColor="@color/color_blue"/>
+	        </LinearLayout>
+    </TableRow>
+    <TableRow>
+        <View 
+            android:id="@+id/night_light_line3"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/night_light_start_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_time" />
+
+        <TextView
+            android:id="@+id/night_light_alert_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="7:00 AM"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_blue" 
+            android:layout_weight="1"/>
+    </TableRow>
+    <TableRow>
+        <View 
+            android:id="@+id/night_light_line4"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+    
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/night_light_end_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_time" />
+
+        <TextView
+            android:id="@+id/night_light_alert_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="12:00 PM"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_blue" 
+            android:layout_weight="1"/>
+    </TableRow>
+   
+    <TableRow>
+        <View 
+            android:id="@+id/night_light_line5"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/darker_gray"/>
+    </TableRow>
+</TableLayout>

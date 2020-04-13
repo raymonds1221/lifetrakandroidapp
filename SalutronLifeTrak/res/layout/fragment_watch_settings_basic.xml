@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:id="@+id/focus_linear"
+    tools:showIn="@layout/fragment_watch_settings">
+
+    <!-- <include layout="@layout/watch_settings_urwatch" /> -->
+
+    <TextView
+        android:id="@+id/app_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background_gray"
+        android:paddingBottom="@dimen/user_profile_content_padding"
+        android:paddingLeft="@dimen/user_profile_content_padding"
+        android:paddingRight="@dimen/user_profile_content_padding"
+        android:paddingTop="@dimen/total_sleep_time_textsize2"
+        android:text="@string/app_setting_caption"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_dark_gray"
+        android:textSize="@dimen/connect_to_device_textsize"/>
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/view1"
+        android:visibility="gone"/>
+
+    <Switch
+        android:visibility="gone"
+        android:id="@+id/data_sync_reminder_alert_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/settings_alert_autosync_alert"
+        android:textSize="@dimen/sync_status_textsize"
+        android:textColor="@color/color_black_text"
+        android:thumb="@color/color_100_percent"
+        android:checked="true" />
+
+    <View style="@style/Separator.Horizontal" 
+        android:id="@+id/view2"
+        android:visibility="visible"/>
+
+    <TableLayout
+        android:id="@+id/data_sync_reminder_alert_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/user_profile_content_padding"
+        android:visibility="gone"
+        >
+
+        <TableRow
+            android:id="@+id/once_aday_row"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sync_status_textsize"
+                android:paddingLeft="8dp"
+                android:textColor="@color/color_black_text"
+                android:text="@string/settings_alert_autosync_onceaday" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/onceaday_txv"
+                    style="@style/Label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="9:00 AM"
+                    android:textColor="@color/color_100_percent" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <View style="@style/Separator.Horizontal"
+            android:id="@+id/v1" />
+
+        <TableRow
+            android:id="@+id/once_aweek_row"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_black_text"
+                android:paddingLeft="8dp"
+                android:textSize="@dimen/sync_status_textsize"
+                android:text="@string/settings_alert_autosync_onceaweek" />
+
+            <LinearLayout
+                android:id="@+id/once_aweek_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/onceaweek_day_txv"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:text="Mon"
+                    android:textColor="@color/color_100_percent" />
+
+                <TextView
+                    android:id="@+id/onceaweek_day_coma"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text=", "
+                    android:textColor="@color/color_100_percent" />
+
+                <TextView
+                    android:id="@+id/onceaweek_time_txv"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="9:00 AM"
+                    android:textColor="@color/color_100_percent" />
+
+
+            </LinearLayout>
+        </TableRow>
+
+        <View style="@style/Separator.Horizontal"
+            android:id="@+id/v2" />
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1.8">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:text="@string/prompt_updated_settins"
+                android:textColor="@color/color_black_text"
+                android:textSize="@dimen/sync_status_textsize"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:textColor="@color/color_dark_gray"
+                android:text="@string/prompt_updated_settins_subtitle"
+                android:textSize="@dimen/activity_vertical_margin" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/prompt_alert_switch"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="50dp"
+            android:textColor="@color/color_black_text"
+            android:thumb="@color/color_100_percent"
+            android:checked="true" />
+        <RadioGroup
+            android:id="@+id/rdgPrompt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/radPromptYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/prompt_yes"
+                android:textSize="@dimen/sync_status_textsize" />
+
+            <RadioButton
+                android:id="@+id/radPromptNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/prompt_no"
+                android:textSize="@dimen/sync_status_textsize" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/Separator.Horizontal" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background_gray"
+    android:paddingBottom="@dimen/user_profile_content_padding"
+    android:paddingLeft="@dimen/user_profile_content_padding"
+    android:paddingRight="@dimen/user_profile_content_padding"
+    android:paddingTop="@dimen/total_sleep_time_textsize2">
+
+    <TextView
+        android:id="@+id/unitprefs_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/watch_setting_caption"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_dark_gray"
+        android:textSize="@dimen/connect_to_device_textsize"/>
+
+    <TextView
+        android:id="@+id/textView_switch_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/switch_watch_caption"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_100_percent"
+        android:textSize="@dimen/connect_to_device_textsize"/>
+
+</RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_marginLeft="@dimen/abs__action_bar_icon_vertical_padding"
+            android:layout_height="85dp"
+            android:scaleType="centerInside"
+            android:id="@+id/imageview_watch"
+            android:src="@drawable/watch_r500_black"/>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/abs__action_bar_icon_vertical_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left|center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="LifeTak Brite R450"
+                android:textSize="@dimen/sync_status_textsize"
+                android:id="@+id/textView_watchname"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="LifeTak Brite R450"
+                android:textColor="@color/color_dark_gray"
+                android:textSize="@dimen/activity_vertical_margin"
+                android:id="@+id/textView_last_date_synced" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+      />
+
+    <LinearLayout
+        android:id="@+id/date_format_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/device_name_caption"
+            android:textColor="@color/color_black_text"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <EditText
+            android:id="@+id/textview_devicename_caption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:background="@null"
+            android:singleLine="true"
+            android:orientation="horizontal"
+            android:text="LifeTak Brite R450"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <include layout="@layout/watch_settings_unitprefs" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0"
+        android:id="@+id/view_for_alarm" />
+
+
+
+    <Button
+        android:id="@+id/alert_settings"
+        style="@style/Button.rightarrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sync_status_textsize"
+        android:padding="@dimen/user_profile_content_padding"
+        android:textColor="@color/color_black_text"
+        android:text="@string/settings_alert_settings_btn_caption" />
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/view_for_notification" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_notification"
+
+        android:padding="@dimen/user_profile_content_padding"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/notification"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/sync_status_textsize"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:clickable="false"
+            android:text="@string/settings_notification_btn_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/notification"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/settings_notification_btn_caption_subtitle"
+            android:id="@+id/textView8"
+
+            android:textColor="@color/color_dark_gray"
+
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/view_for_smart_calib"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_smart_calibration"
+        style="@style/Button.rightarrow"
+        android:padding="@dimen/user_profile_content_padding"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/smart_calib"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/sync_status_textsize"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:clickable="false"
+            android:text="@string/smart_calibration_btn_caption" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/smart_calib"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/settings_calibration_btn_caption_subtitle"
+            android:id="@+id/textView89"
+
+            android:textColor="@color/color_dark_gray"
+
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <View style="@style/Separator.Horizontal" />
+
+    <Button
+        android:id="@+id/button_sync_setting_watch"
+        style="@style/Button.rightsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sync_status_textsize"
+        android:padding="@dimen/user_profile_content_padding"
+        android:textColor="@color/color_black_text"
+        android:text="@string/btn_sync_settings_to_watch" />
+
+    <include layout="@layout/watch_settings_urprofile" />
+
+
+
+
+
+    <View style="@style/Separator.Horizontal" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background_gray"
+        android:paddingBottom="@dimen/user_profile_content_padding"
+        android:paddingLeft="@dimen/user_profile_content_padding"
+        android:paddingRight="@dimen/user_profile_content_padding"
+        android:paddingTop="@dimen/total_sleep_time_textsize2"
+        android:text="@string/cloud_setting_caption"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_dark_gray"
+        android:textSize="@dimen/connect_to_device_textsize"/>
+
+    <View style="@style/Separator.Horizontal"
+        />
+
+    <Switch
+        android:id="@+id/sync_to_cloud_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/enable_sync_to_cloud"
+        android:textSize="@dimen/sync_status_textsize"
+        android:textColor="@color/color_black_text"
+        android:thumb="@color/color_100_percent"
+        android:checked="true" />
+
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/line_for_button_sync_to_cloud"
+        />
+
+    <Button
+        android:id="@+id/button_sync_to_cloud"
+        style="@style/Button.rightsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sync_status_textsize"
+        android:padding="@dimen/user_profile_content_padding"
+        android:textColor="@color/color_black_text"
+        android:text="@string/sync_to_cloud" />
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/line_for_button_update_watch"
+        />
+
+    <Button
+        android:id="@+id/button_update_watch"
+        style="@style/Button.rightsync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sync_status_textsize"
+        android:padding="@dimen/user_profile_content_padding"
+        android:textColor="@color/color_black_text"
+        android:text="@string/update_firmware" />
+
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/view_for_workout"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_workout"
+        android:visibility="gone"
+        android:background="@color/color_background_gray"
+        android:paddingBottom="@dimen/user_profile_content_padding"
+        android:paddingLeft="@dimen/user_profile_content_padding"
+        android:paddingRight="@dimen/user_profile_content_padding"
+        android:paddingTop="@dimen/total_sleep_time_textsize2">
+
+        <TextView
+            android:id="@+id/workout_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/workout_setting_caption"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_dark_gray"
+            android:textSize="@dimen/connect_to_device_textsize"/>
+
+        <TextView
+            android:id="@+id/textView_reset_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/reset_workout_caption"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/connect_to_device_textsize"/>
+
+    </RelativeLayout>
+
+
+    <include layout="@layout/watch_workout_settings" />
+
+    <View style="@style/Separator.Horizontal"
+        />
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+         android:id="@+id/viewnotif2" 
+        android:background="@color/color_background_gray" />
+
+</LinearLayout>

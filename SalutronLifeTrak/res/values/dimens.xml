@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="activity_welcome_top_margin">20dp</dimen>
+    <dimen name="mini_text">6sp</dimen>
+    <!-- text sizes -->
+    <dimen name="connect_to_device_textsize">12sp</dimen>
+    <dimen name="watch_name_textsize">18sp</dimen>
+    <dimen name="pair_watch_message_textsize">14sp</dimen>
+    <dimen name="menu_textsize">16sp</dimen>
+    <dimen name="calendar_day_textsize">13sp</dimen>
+    <dimen name="cannot_connect_textsize">20sp</dimen>
+    <dimen name="cannot_connect_description_textsize">10sp</dimen>
+    <dimen name="searching_device_textsize">17sp</dimen>
+    <dimen name="sync_status_textsize">15sp</dimen>
+    <dimen name="dashboard_item_title_textsize">19sp</dimen>
+    <dimen name="dashboard_item_value_textsize">29sp</dimen>
+    <dimen name="dashboard_item_unit_textsize">22sp</dimen>
+    <dimen name="dashboard_item_title_reminder_textsize">17sp</dimen>
+    <dimen name="verify_user_profile_textsize">17sp</dimen>
+    <dimen name="user_profile_gender_textsize">13sp</dimen>
+    <dimen name="to_date_textsize">12sp</dimen>
+    <dimen name="fitness_results_stat_metric_title_textsize">16sp</dimen>
+    <dimen name="fitness_results_stat_metric_value_textsize">35sp</dimen>
+    <dimen name="fitness_results_stat_metric_goal_textsize">23sp</dimen>
+    <dimen name="fitness_results_stat_metric_goal_value_textsize">10sp</dimen>
+    <dimen name="year_textsize">18sp</dimen>
+    <dimen name="total_active_time_textsize">18sp</dimen>
+    <dimen name="total_active_time_hr_min_textsize">30sp</dimen>
+    <dimen name="total_active_time_unit_textsize">15sp</dimen>
+    <dimen name="fitness_results_am_pm">18sp</dimen>
+    <dimen name="avg_bpm_textsize">16sp</dimen>
+    <dimen name="avg_bpm_value_textsize">35sp</dimen>
+    <dimen name="total_sleep_time_textsize2">16sp</dimen>
+    <dimen name="total_sleep_time_value_textsize">35sp</dimen>
+    <dimen name="total_sleep_time_unit_textsize">20dp</dimen>
+    
+    <!-- paddings -->
+    <dimen name="pair_message_bottom_padding">15dp</dimen>
+    <dimen name="pair_message_vertical_padding">20dp</dimen>
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="welcome_watch_text_margin">10dp</dimen>
+    <dimen name="user_profile_padding_top">50dp</dimen>
+    <dimen name="verify_user_profile_padding">30dp</dimen>
+    <dimen name="user_profile_content_padding">8dp</dimen>
+    <dimen name="user_profile_desc_padding">40dp</dimen>
+    <dimen name="fitness_landscape_stats_padding">15dp</dimen>
+    
+    <!-- margins -->
+    <dimen name="sync_view_margin_top">50dp</dimen>
+    <dimen name="welcome_vertical_margin">15dp</dimen>
+    <dimen name="user_profile_content_margin">25dp</dimen>
+    <dimen name="fitness_resuls_stats_margin_vertical">8dp</dimen>
+    <dimen name="fitness_resuls_stats_margin_horizontal">20dp</dimen>
+    <dimen name="fitness_landscape_stats_margin">5dp</dimen>
+    <dimen name="actigraphy_top_margin">20dp</dimen>
+    
+    <!-- sliding menu -->
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    
+    <!-- heights -->
+    <dimen name="calendar_height">400dp</dimen>
+
+</resources>

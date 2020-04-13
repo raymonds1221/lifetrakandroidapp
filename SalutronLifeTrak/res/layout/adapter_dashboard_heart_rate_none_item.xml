@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/selector_dasboard_item">
+	<ImageView 
+        android:id="@+id/imgHeartRateProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ll_dashboard_heartrate_wheel_moderate"
+        android:contentDescription="@string/heart_rate" />
+	<TextView 
+	    android:id="@+id/tvwDashboardItemTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/imgHeartRateProgress"
+	    android:layout_centerVertical="true"
+	    android:text="@string/avg_heart_rate"
+	    android:textSize="@dimen/dashboard_item_title_reminder_textsize"
+	    android:maxWidth="180dp" />
+	<ImageView 
+        android:id="@id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_dragdrop"
+        android:contentDescription="@string/drag_and_drop" />
+</RelativeLayout>

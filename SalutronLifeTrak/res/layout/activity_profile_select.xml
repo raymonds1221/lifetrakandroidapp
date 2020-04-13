@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_dialog_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="@string/choose_user_profile"
+            android:textColor="@color/color_black_text"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/lnrProfileSelectBtnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/btnUseApp"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:onClick="onButtonSelectClick"
+                android:text="@string/use_app_button_text"
+                android:textColor="@color/color_dialog_button_textcolor" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnUseWatch"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:onClick="onButtonSelectClick"
+                android:text="@string/use_watch_button_text"
+                android:textColor="@color/color_dialog_button_textcolor" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/lnrProfileSelectBtnContainer"
+            android:background="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/chkDoNotShowAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:text="@string/do_not_show_again"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_black_text" />
+
+    </RelativeLayout>
+
+</FrameLayout>

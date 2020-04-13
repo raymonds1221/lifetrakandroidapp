@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_user_profile_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/user_profile_padding_top" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/verify_user_profile_padding"
+        android:paddingRight="@dimen/verify_user_profile_padding"
+        android:text="@string/verify_personal_details"
+        android:textSize="@dimen/verify_user_profile_textsize"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/user_profile_content_margin"
+        android:background="@android:color/white"
+        android:padding="@dimen/user_profile_content_padding" >
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/weight" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right" >
+
+                <EditText
+                    android:id="@+id/tvwWeightValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textSize="14sp"
+                     /> <!-- android:hint="20kg-200kg or 44lbs-440lbs" -->
+
+                <TextView
+                    android:id="@+id/tvwWeightUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/tvwWeightValue"
+                     />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/height" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right" >
+
+                <EditText
+                    android:id="@+id/tvwHeightValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvwHeightUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:labelFor="@id/tvwHeightValue" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/birthday" />
+
+            <TextView
+                android:id="@+id/tvwBirthdayValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:gravity="right" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical"
+            android:minHeight="40dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/gender" />
+
+            <RadioGroup
+                android:id="@+id/rdgGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_choice"
+                    android:checked="true"
+                    android:text="@string/gender_male"
+                    android:textSize="@dimen/user_profile_gender_textsize"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/radFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_choice"
+                    android:text="@string/gender_female"
+                    android:textSize="@dimen/user_profile_gender_textsize"
+                    android:textStyle="normal" />
+            </RadioGroup>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/user_profile_desc_padding"
+        android:paddingRight="@dimen/user_profile_desc_padding"
+        android:text="@string/personal_details_desc" />
+
+</LinearLayout>

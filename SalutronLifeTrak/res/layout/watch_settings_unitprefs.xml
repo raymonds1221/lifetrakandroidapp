@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/color_white">
+
+    <View style="@style/Separator.Horizontal" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/unitprefs_time_caption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/unitprefs_time_caption"
+
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <RadioGroup
+            android:id="@+id/rdgTimeFormat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/unitprefs_time_option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/unitprefs_time_option1"
+                android:textSize="@dimen/sync_status_textsize" />
+
+            <RadioButton
+                android:id="@+id/unitprefs_time_option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/unitprefs_time_option2"
+                android:textSize="@dimen/sync_status_textsize" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hour_format_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/unitprefs_time_caption"
+            android:textColor="@color/color_black_text"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_hour_format"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="12 hour"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <View style="@style/Separator.Horizontal"
+        android:id="@+id/view3002" />
+
+    <Switch
+        android:id="@+id/auto_sync_time_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/user_profile_content_padding"
+        android:text="@string/settings_alert_autosync_time"
+        android:textSize="@dimen/sync_status_textsize"
+        android:checked="false"
+        android:thumb="@color/color_100_percent"
+        android:layout_marginLeft="8dp"
+        />
+
+
+
+
+    <View style="@style/Separator.Horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/lnrDateFormatForCModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:id="@+id/unitprefs_date_caption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/date_caption"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <RadioGroup
+            android:id="@+id/rdgDateFormat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/unitprefs_date_option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/unitprefs_date_option1_caption"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/unitprefs_date_option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/unitprefs_date_option2_caption"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        style="@style/Separator.Horizontal"
+        android:visibility="gone"
+        android:id="@+id/viewunit1"/>
+
+    <LinearLayout
+        android:id="@+id/date_format_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:id="@+id/datetime_caption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/date_caption"
+
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_datetime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="MM/DD/YY"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        style="@style/Separator.Horizontal"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/unitprefs_unit_caption"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_unit_selection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="Full"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/unitprefs_unit_caption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/unitprefs_unit_caption"
+
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <RadioGroup
+            android:id="@+id/rdgUnitPrefs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/unitprefs_unit_option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/unitprefs_unit_option1"
+                android:textSize="@dimen/sync_status_textsize" />
+
+            <RadioButton
+                android:id="@+id/unitprefs_unit_option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/unitprefs_unit_option2"
+                android:textSize="@dimen/sync_status_textsize" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        style="@style/Separator.Horizontal"
+        android:id="@+id/view_for_watch_display"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/menu_textsize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:id="@+id/Linear_watch_display"
+        android:paddingRight="@dimen/menu_textsize"
+        android:paddingTop="@dimen/menu_textsize" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/watch_display_caption"
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <TextView
+            android:id="@+id/textview_watch_display_watch_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right|center"
+            android:orientation="horizontal"
+            android:text="Full"
+            android:textColor="@color/color_100_percent"
+            android:textSize="@dimen/sync_status_textsize"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/watch_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/watch_display_caption"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/watch_display_caption"
+
+            android:textSize="@dimen/sync_status_textsize" />
+
+        <RadioGroup
+            android:id="@+id/rdgWatchDisplayPrefs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/WatchDisplayprefs_unit_option1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/wdprefs_unit_option1"
+                android:textSize="@dimen/sync_status_textsize" />
+
+            <RadioButton
+                android:id="@+id/WatchDisplayprefs_unit_option2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wdprefs_unit_option2"
+                android:textSize="@dimen/sync_status_textsize" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background_gray"
+        android:paddingBottom="@dimen/user_profile_content_padding"
+        android:paddingLeft="@dimen/user_profile_content_padding"
+        android:paddingRight="@dimen/user_profile_content_padding"
+        android:paddingTop="@dimen/total_sleep_time_textsize2"
+        android:text="@string/prompt_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_dark_gray"
+         android:textSize="@dimen/sync_status_textsize" />
+
+
+                android:textAllCaps="true"
+
+</LinearLayout>

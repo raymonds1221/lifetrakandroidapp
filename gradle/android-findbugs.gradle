@@ -1,0 +1,29 @@
+apply plugin: 'findbugs'
+
+findbugs {
+    effort = 'max'
+    ignoreFailures = true
+    // Disable default FindBugs tasks
+    sourceSets = null
+}
+
+task findbugsRelease(type: FindBugs) {
+    // AndroidSourceSet doesn't have an `output` property, thus we have to hard code the path here
+    classes = files('build/intermediates/classes/release')
+    source = android.sourceSets.main.java.srcDirs
+    classpath = configurations.compile.asFileTree
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
+}
+check.dependsOn findbugsRelease
+
+// Make sure that FindBugs runs before ProGuard obfuscates the bytecode
+tasks.whenTaskAdded { task ->
+    if (task.name == 'compileReleaseJava') {
+        findbugsRelease.dependsOn task
+    } else if (task.name == 'proguardRelease') {
+        task.mustRunAfter findbugsRelease
+    }
+}

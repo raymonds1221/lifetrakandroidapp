@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/white">
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/enable_sync_to_cloud"
+            android:textSize="15sp" />
+        <Switch 
+            android:id="@+id/swtEnableSyncToCloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="@android:color/black"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sync_to_cloud"
+                android:textSize="15sp"/>
+            <TextView 
+                android:id="@+id/tvwCloudLastSync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/imgSyncToCloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/icon_sync"
+            android:contentDescription="@string/sync"
+            android:background="@android:color/transparent" />
+    </TableRow>
+</TableLayout>
